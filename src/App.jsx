@@ -9,19 +9,14 @@ import { Car } from 'lucide-react';
 
 function App() {
   return (
-    <div className="w-7xl mx-auto">
-
-
-
+<div className='w-max- h-full flex flex-col  items-center justify-center' > 
       <Hero />
       <Features />
       <Carousel />
       <Services />
       <Bunny />
       <WhyInvest />
-
-
-    </div>
+</div>
   );
 }
 

@@ -3,7 +3,7 @@ export const Hero = () => {
 
     <section className="text-center px-3 py-12 burbuja">
 
-      <div className="w-3xl mx-auto ">
+      <div className=" mx-auto ">
       <i className="fi fi-rs-display-code text-4xl"></i>
       <br></br>
         <strong className="uppercase text-lg tracking-wide font-semibold">

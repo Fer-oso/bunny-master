@@ -42,12 +42,10 @@ body {
 
   .section{
     display: flex;
-    width: 1230px;
     height: 430px;
     justify-content: center;
-   
-   
   }
+
   .section-img{
     width: 0px;
     flex-grow: 1;

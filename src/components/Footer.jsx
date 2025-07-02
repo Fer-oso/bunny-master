@@ -34,7 +34,7 @@ export const Footer = () => {
 
         <div>
           <i
-            class=
+            className=
             "fi fi-brands-instagram m-2 text-red-600"
           ></i>
           <strong>

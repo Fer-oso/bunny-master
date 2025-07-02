@@ -2,8 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 
 import App from "../App";
 import { GeneralLayout } from "./layout/GeneralLayout";
-import MiComponenteSpline from "../components/SobreNosotros";
+
 import Services from "../components/Services";
+import MiComponenteSpline from "../pages/sobrenosotros/SobreNosotros";
 
 
 export const routes = () => {

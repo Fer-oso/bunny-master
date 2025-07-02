@@ -1,4 +1,4 @@
-export const TeamCard = ( name, role, imageSrc, linkedinUrl ) =>{
+export const TeamCard = ( {name, role, imageSrc, linkedinUrl} ) =>{
     return (
         <div className="flex flex-col justify-between items-center border-2 border-pink-400 rounded-xl p-4 w-54 h-72">
         <div className="flex flex-col items-center">
