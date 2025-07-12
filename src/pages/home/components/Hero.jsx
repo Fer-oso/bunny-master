@@ -5,7 +5,7 @@ export const Hero = () => {
         <i className="fi fi-rs-display-code text-4xl sm:text-5xl lg:text-6xl text-primary"></i>
         <br />
         <strong className="uppercase text-base sm:text-lg tracking-wide font-semibold block mt-2">
-          Bunny <br className="sm:hidden" /> Soluciones Tecnológicas
+          Bunny <br className="sm:hidden" /> Creations World
         </strong>
 
         <h1 className="primary-color text-center font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mt-6">

@@ -6,7 +6,7 @@ export default function Services() {
       {/* Texto */}
       <div>
         <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">TU PÁGINA WEB PROFESIONAL</h2>
-        <h3 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 primary-color uppercase">QUÉ OFRECEMOS</h3>
+        <h3 className="text-5xl md:text-6xl lg:text-6xl font-bold mb-6 primary-color uppercase">QUÉ OFRECEMOS</h3>
       </div>
 
       {/* Imagen como fondo */}
@@ -14,7 +14,7 @@ export default function Services() {
     </div>
 
     {/* Servicios */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-12 gap-6 text-gray-800">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 text-gray-800">
       <div>
         <h4 className="font-bold text-2xl mb-2">Sitios y diseño web</h4>
         <ul className="list-disc ml-5 text-lg space-y-1">

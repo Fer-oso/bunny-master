@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react"; // opcional, ícono decorativo
-import MiComponenteSpline from '../pages/sobrenosotros/SobreNosotros'; // Ajusta la ruta si es necesario
+import MiComponenteSpline from '../../sobrenosotros/SobreNosotros'; // Ajusta la ruta si es necesario
 
 
 export default function WhyInvest() {

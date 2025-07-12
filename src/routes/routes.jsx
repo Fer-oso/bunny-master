@@ -1,11 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import App from "../App";
 import { GeneralLayout } from "./layout/GeneralLayout";
 
-import Services from "../components/Services";
 import MiComponenteSpline from "../pages/sobrenosotros/SobreNosotros";
-
+import Services from "../pages/servicios/Services";
+import { Home } from "../pages/home/Home";
 
 export const routes = () => {
   const router = createBrowserRouter(
@@ -14,7 +13,7 @@ export const routes = () => {
         path: "/",
         element: <GeneralLayout />,
         children: [
-          { index: true, element: <App /> },
+          { index: true, element: <Home /> },
           {
             path: "/nosotros",
             element: <MiComponenteSpline/>,

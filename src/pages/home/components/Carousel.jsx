@@ -4,7 +4,7 @@ export const Carousel = () => {
    
   <div className="mt-15"> 
   
-  <h1 className="primary-color font-bold" style={{ fontSize: "60px"}}>Nuestros Proyectos</h1>
+  <h1 className="primary-color font-bold text-6xl">Nuestros Proyectos</h1>
  
 
    <div className="conteiner-section mx-auto mt-5 ">

@@ -1,8 +1,10 @@
+import { Logo } from "../logo/Logo";
+
 export const Footer = () => {
   return (
-    <footer className="bg-black bg-gray-100 text-center text-xl py-6 mt-16">
+    <footer className="bg-gray-100 text-center text-xl py-6 mt-16">
       <div className="flex justify-center gap-10 mb-4">
-        <img src="/img/bunnylogo1.png" alt="Bunny Logo" className="h-20" />
+      <Logo fontSize={"13px"} />
       </div>
       <div className="flex flex-col sm:flex-row justify-center gap-6 m-10">
         <div>
