@@ -5,17 +5,17 @@ import { Hero } from './components/Hero';
 import SobreNosotros from './pages/sobrenosotros/SobreNosotros';
 import { Carousel } from './components/Carousel';
 import {Bunny} from './components/Bunny';
-import { Car } from 'lucide-react';
+
 
 function App() {
   return (
-<div className='w-max- h-full flex flex-col  items-center justify-center' > 
+<div className="w-7xl mx-auto"> 
       <Hero />
       <Features />
       <Carousel />
       <Services />
       <Bunny />
-      <WhyInvest />
+    {/* <WhyInvest />*/}
 </div>
   );
 }

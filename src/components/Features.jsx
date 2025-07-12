@@ -1,6 +1,6 @@
 export default function Features() {
   return (
-   <section className="px-6 py-10">
+   <div className="mt-5">
   <div className="border-2 border-fuchsia-700 bg-white rounded-lg flex flex-col lg:flex-row items-stretch overflow-hidden min-h-[520px]">
     
     {/* Columna izquierda más ancha */}
@@ -42,7 +42,7 @@ export default function Features() {
     </div>
     
   </div>
-</section>
+</div>
 
   );
 }

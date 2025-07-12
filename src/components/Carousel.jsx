@@ -2,12 +2,12 @@ export const Carousel = () => {
   return (
 
    
-     <> 
-     <div className="w-full primary-color text-6xl font-bold ">
-     <h1>Nuestros Proyectos</h1>
-   </div>
+  <div className="mt-15"> 
+  
+  <h1 className="primary-color font-bold" style={{ fontSize: "60px"}}>Nuestros Proyectos</h1>
+ 
 
-   <div className="conteiner-section w-full mt-5">
+   <div className="conteiner-section mx-auto mt-5 ">
      <section className="section w-full">
        <img className="section-img" src="./img/disenio.png">
        </img>
@@ -20,7 +20,7 @@ export const Carousel = () => {
      </section>
    </div>
 
-</>
+</div>
   
 
   )

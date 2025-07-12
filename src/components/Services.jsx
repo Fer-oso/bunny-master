@@ -1,16 +1,16 @@
 export default function Services() {
     return (
-<section className="py-10 bg-white">
-  <div className="max-w-6xl mx-auto px-4">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<section className="mt-5">
+  <>
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center">
       {/* Texto */}
       <div>
         <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">TU PÁGINA WEB PROFESIONAL</h2>
-        <h3 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-indigo-600 uppercase">QUÉ OFRECEMOS</h3>
+        <h3 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 primary-color uppercase">QUÉ OFRECEMOS</h3>
       </div>
 
       {/* Imagen como fondo */}
-      <img src="/img/computer.png" alt="Computadora" className="w-full h-auto object-contain" />
+      <img src="/img/computer.png" alt="Computadora" className="w-full h-96 object-contain" />
     </div>
 
     {/* Servicios */}
@@ -44,7 +44,7 @@ export default function Services() {
         </ul>
       </div>
     </div>
-  </div>
+  </>
 </section>
     );
   }
