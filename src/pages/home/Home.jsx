@@ -7,7 +7,8 @@ import Services from "../servicios/Services"
 export const Home = () =>{
     return (
    
-     <>  <Hero />
+     <>  
+     <Hero />
      <Features />
      <Carousel />
      <Services />

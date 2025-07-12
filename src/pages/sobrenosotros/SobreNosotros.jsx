@@ -42,8 +42,8 @@ export default function MiComponenteSpline() {
         {/* Fila 2: 2 tarjetas centradas */}
         <div className="flex justify-center gap-10 flex-wrap">
           <TeamCard name="Fernando Osorio" role="Community Manager" imageSrc={"/img/fotoperfilfer.jpg"}  linkedinUrl={"https://www.linkedin.com/in/osorio-fernando/"}/>
-          <TeamCard name="Arturo Prado" role="Programador" />
-          <TeamCard name="Lucas Rivas" role="Diseñador Gráfico" imageSrc={"/img/fotoperfillucas.jpg"} />
+          <TeamCard name="Arturo Prado" role="Programador" imageSrc={"/img/fotoperfilarturo.jpg"}  linkedinUrl={"https://www.linkedin.com/in/arturpra/"}/>
+          <TeamCard name="Lucas Rivas" role="Diseñador Gráfico" imageSrc={"/img/fotoperfillucas.jpg"} linkedinUrl={"https://www.linkedin.com/in/lucas-valentin-rivas"} />
         </div>
 
         {/* Fila 3: 3 tarjetas centradas 

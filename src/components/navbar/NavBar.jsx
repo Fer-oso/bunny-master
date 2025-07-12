@@ -7,8 +7,8 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50 ">
-      <div className=" mx-auto flex items-center justify-between w-full md:w-7xl md:mx-auto">
+    <nav className="bg-white shadow-md  sticky top-0 z-50 ">
+      <div className=" mx-auto flex items-center justify-between w-full">
       <Logo fontSize="8px"/>
 
         {/* Botón hamburguesa (mobile) */}
