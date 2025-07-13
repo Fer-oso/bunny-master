@@ -7,13 +7,13 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md  sticky top-0 z-50 ">
-      <div className=" mx-auto flex items-center justify-between w-full">
+    <nav className="bg-white shadow-md sticky top-0 z-50 ">
+      <div className=" mx-auto flex items-center justify-between sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
       <Logo fontSize="8px"/>
 
         {/* Botón hamburguesa (mobile) */}
         <button
-          className="md:hidden text-gray-800 focus:outline-none"
+          className="md:hidden text-gray-800 focus:outline-none "
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
