@@ -2,11 +2,12 @@ import { Logo } from "../logo/Logo";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-center text-xl py-6 mt-16">
+    <footer className="bg-gray-100 text-center text-xl mt-10">
       <div className="flex justify-center gap-10 mb-4">
-      <Logo fontSize={"13px"} />
+      <Logo height="
+      100px" />
       </div>
-      <div className="flex flex-col sm:flex-row justify-center gap-6 m-10">
+      <div className="flex flex-col sm:flex-row justify-center gap-6 ">
         <div>
           <i className="fi fi-sr-envelope m-2"></i>
           <strong>

@@ -1,3 +1,5 @@
+import { Wrench } from "lucide-react";
+
 export default function Services() {
     return (
 <section className="mt-5">
@@ -14,9 +16,13 @@ export default function Services() {
     </div>
 
     {/* Servicios */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 text-gray-800">
-      <div>
-        <h4 className="font-bold text-2xl mb-2">Sitios y diseño web</h4>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-gray-800">
+
+    <div>
+    <div className="flex items-center space-x-2">
+        <Wrench color="oklch(65.6% 0.241 354.308)"/><h4 className="font-bold text-2xl mb-2"> Sitios y diseño web</h4>
+        </div>
+
         <ul className="list-disc ml-5 text-lg space-y-1">
           <li>Webs institucionales y personales</li>
           <li>E-commerce y tiendas online</li>
@@ -24,8 +30,12 @@ export default function Services() {
           <li>Integración con redes sociales</li>
         </ul>
       </div>
+
       <div>
-        <h4 className="font-bold text-2xl mb-2">Automatización y herramientas</h4>
+        <div className="flex items-center space-x-2">
+        <Wrench color="oklch(65.6% 0.241 354.308)"/><h4 className="font-bold text-2xl mb-2"> Automatizaciónes</h4>
+        </div>
+      
         <ul className="list-disc ml-5 text-lg space-y-1">
           <li>Formularios inteligentes</li>
           <li>CRM personalizados</li>
@@ -33,8 +43,11 @@ export default function Services() {
           <li>Conexión con APIs externas (Zapier, etc.)</li>
         </ul>
       </div>
+
       <div>
-        <h4 className="font-bold text-2xl mb-2">Marketing y contenidos</h4>
+      <div className="flex items-center space-x-2">
+      <Wrench color="oklch(65.6% 0.241 354.308)"/><h4 className="font-bold text-2xl mb-2"> Marketing y contenidos</h4>
+        </div>
         <ul className="list-disc ml-5 text-lg space-y-1">
           <li>Diseño de identidad visual</li>
           <li>Calendario de publicaciones</li>
@@ -43,6 +56,8 @@ export default function Services() {
           <li>Análisis y estrategia de crecimiento</li>
         </ul>
       </div>
+
+
     </div>
   </>
 </section>

@@ -8,8 +8,8 @@ export default function NavBar() {
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50 ">
-      <div className=" mx-auto flex items-center justify-between sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
-      <Logo fontSize="8px"/>
+      <div className=" mx-auto px-2 sm:px-0 flex items-center justify-between sm:max-w-screen-sm  md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+      <Logo height="75px"/>
 
         {/* Botón hamburguesa (mobile) */}
         <button
