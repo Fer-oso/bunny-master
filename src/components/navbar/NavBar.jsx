@@ -7,7 +7,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50 ">
+    <nav className="shadow-md sticky top-0 z-50" style={{background:'#ffffff'}}>
       <div className=" mx-auto px-2 sm:px-0 flex items-center justify-between sm:max-w-screen-sm  md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
       <Logo height="75px"/>
 
@@ -20,16 +20,16 @@ export default function NavBar() {
         </button>
 
         {/* Menú (desktop) */}
-        <ul className="hidden md:flex gap-6 font-semibold text-md text-gray-800">
-          <li><Link to="/" className="hover:text-pink-500">INICIO</Link></li>
-          <li><Link to="/nosotros" className="hover:text-pink-500">SOBRE NOSOTROS</Link></li>
-          <li><Link to="/servicios" className="hover:text-pink-500">SERVICIOS</Link></li>
+        <ul className="hidden md:flex gap-6 font-semibold text-md">
+          <li><Link to="/" className="bunny-color">INICIO</Link></li>
+          <li><Link to="/nosotros" className="bunny-color">SOBRE NOSOTROS</Link></li>
+          <li><Link to="/servicios" className="bunny-color">SERVICIOS</Link></li>
           <li>
             <a
               href="https://wa.me/5493512008632"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-pink-400 text-white px-4 py-2 rounded-full hover:bg-pink-500 transition"
+              className="px-4 py-2 rounded-full transition bunny-color"
             >
               CONTÁCTANOS
             </a>

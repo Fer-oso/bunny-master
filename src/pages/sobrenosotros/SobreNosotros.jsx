@@ -35,15 +35,15 @@ export default function MiComponenteSpline() {
         {/* Fila 1: 1 tarjeta centrada */}
         <div className="flex justify-center gap-10">
 
-          <TeamCard name="Yazmin Ferreyra" role="Programadora" imageSrc={"/img/yazmin.JPG"} linkedinUrl={"https://www.linkedin.com/in/yazmin-ferreyra"} />
-          <TeamCard name="Sofia Pericas" role="Diseñadora UX/UI" imageSrc={"/img/fotoperfilsofi.jpg"} linkedinUrl={"https://www.linkedin.com/in/sofia-pericas/"} />
+          <TeamCard name="Yazmin Ferreyra" role="Programadora" imageSrc={"/img/perfil/yazmin.JPG"} linkedinUrl={"https://www.linkedin.com/in/yazmin-ferreyra"} />
+          <TeamCard name="Sofia Pericas" role="Diseñadora UX/UI" imageSrc={"/img/perfil/fotoperfilsofi.jpg"} linkedinUrl={"https://www.linkedin.com/in/sofia-pericas/"} />
         </div>
 
         {/* Fila 2: 2 tarjetas centradas */}
         <div className="flex justify-center gap-10 flex-wrap">
-          <TeamCard name="Fernando Osorio" role="Community Manager" imageSrc={"/img/fotoperfilfer.jpg"}  linkedinUrl={"https://www.linkedin.com/in/osorio-fernando/"}/>
-          <TeamCard name="Arturo Prado" role="Programador" imageSrc={"/img/fotoperfilarturo.jpg"}  linkedinUrl={"https://www.linkedin.com/in/arturpra/"}/>
-          <TeamCard name="Lucas Rivas" role="Diseñador Gráfico" imageSrc={"/img/fotoperfillucas.jpg"} linkedinUrl={"https://www.linkedin.com/in/lucas-valentin-rivas"} />
+          <TeamCard name="Fernando Osorio" role="Community Manager" imageSrc={"/img/perfil/fotoperfilfer.jpg"}  linkedinUrl={"https://www.linkedin.com/in/osorio-fernando/"}/>
+          <TeamCard name="Arturo Prado" role="Programador" imageSrc={"/img//perfil/fotoperfilarturo.jpg"}  linkedinUrl={"https://www.linkedin.com/in/arturpra/"}/>
+          <TeamCard name="Lucas Rivas" role="Diseñador Gráfico" imageSrc={"/img//perfil/fotoperfillucas.jpg"} linkedinUrl={"https://www.linkedin.com/in/lucas-valentin-rivas"} />
         </div>
 
         {/* Fila 3: 3 tarjetas centradas 
