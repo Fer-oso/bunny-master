@@ -3,16 +3,18 @@ import { Carousel } from "./components/Carousel"
 import Features from "./components/Features"
 import { Hero } from "./components/Hero"
 import Services from "../servicios/Services"
+import { FeaturesSection } from "./components/FeaturesSection"
 
 export const Home = () =>{
     return (
-   
      <>  
      <Hero />
-     <Features />
+     <FeaturesSection />
+    { /*<Services />*/}
      <Carousel />
-     <Services />
-     <Bunny /></>
-   
+    
+   {/*  <Bunny /> */}
+     
+     </>
     )
 }
