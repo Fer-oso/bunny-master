@@ -35,7 +35,7 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 py-20 lg:py-20 lg:-mt-5 px-4 sm:px-6 lg:px-8">
+    <section className="relative min-h-screen bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 py-20 lg:py-0 lg:-mt-5 px-4 sm:px-6 lg:px-8">
       
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

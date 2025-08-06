@@ -4,6 +4,7 @@ import Features from "./components/Features"
 import { Hero } from "./components/Hero"
 import Services from "../servicios/Services"
 import { FeaturesSection } from "./components/FeaturesSection"
+import ServicesSection from "./components/ServicesSection"
 
 export const Home = () =>{
     return (
@@ -11,7 +12,7 @@ export const Home = () =>{
      <Hero />
      <FeaturesSection />
     { /*<Services />*/}
-     <Carousel />
+     <ServicesSection />
     
    {/*  <Bunny /> */}
      
