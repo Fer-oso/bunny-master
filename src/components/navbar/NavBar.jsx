@@ -7,7 +7,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="shadow-md top-0 text-xs fixed overflow-hidden z-20 w-full bg-white/50 dark:bg-gray-950/50 backdrop-blur-2xl">
+    <nav className="shadow-md top-0 text-xs fixed overflow-hidden z-20 w-full bg-white dark:bg-gray-100/50 backdrop-blur-2xl">
       <div className=" mx-auto px-2 sm:px-0 flex items-center justify-between sm:max-w-screen-sm  md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
       <Logo height="75px"/>
 
@@ -20,7 +20,7 @@ export default function NavBar() {
         </button>
 
         {/* Menú (desktop) */}
-        <ul className="hidden md:flex gap-6 font-semibold ">
+        <ul className="hidden md:flex gap-6 leading-relaxed font-medium text-xs text-slate-600 ">
           <li><Link to="/" className="bunny-color">INICIO</Link></li>
           <li><Link to="/servicios" className="bunny-color">SERVICIOS</Link></li>
           <li><Link to="/nosotros" className="bunny-color">SOBRE NOSOTROS</Link></li>

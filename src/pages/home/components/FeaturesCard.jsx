@@ -66,7 +66,7 @@ export const FeaturesCard = ({
                         relative`}>
           
           {/* Icono principal */}
-          <img src={urlImage} className="w-[full] h-full object-cover "/>
+          <img src={urlImage} className="w-full h-full object-cover"/>
           
           {/* Efectos de fondo */}
           <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
