@@ -22,11 +22,11 @@ export const ServicesListSection = ({ services }) => {
           </div>
 
           {/* Lista de servicios */}
-          <ul className="ml-5 text-lg space-y-1 list-none list-image-[url(/img/check.svg)]">
+          <ul className="ml-5 text-lg space-y-1 ">
             {service.items.map((item, idx) => (
               <li
                 key={idx}
-                className="transition-colors duration-300 "
+                className="transition-colors duration-300 list-image-[url(/img/check.svg)] "
               >
                 {item}
               </li>
