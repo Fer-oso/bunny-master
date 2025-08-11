@@ -3,6 +3,7 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 import { Carousel } from './Carousel';
+import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
   const services = [
@@ -49,7 +50,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen  py-20  px-4 sm:px-6 lg:px-8">
+    <section className="relative min-h-screen xl:min-h-auto  py-20  px-4 sm:px-6 lg:px-8">
       
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -112,7 +113,7 @@ const ServicesSection = () => {
                                transition-all duration-300 ease-out
                                hover:scale-[1.02] active:scale-[0.98]
                                focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:ring-offset-2">
-                <span className="relative z-10">Ver Todos los Servicios</span>
+                <Link className="relative z-10" to='/servicios'>Ver Todos los Servicios</Link>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 
                 {/* Efecto de brillo */}

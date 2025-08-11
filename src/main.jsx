@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom' // IMPORTANTE usar react-router-dom
 import router from './routes/routes'
 import './style/style.css'
+import ScrollToTop from './hooks/ScrollToTop'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

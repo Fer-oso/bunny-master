@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { GeneralLayout } from "./layout/GeneralLayout";
 
 import MiComponenteSpline from "../pages/sobrenosotros/SobreNosotros";
-import Services from "../pages/servicios/Services";
+import {Services} from "../pages/servicios/Services";
 import { Home } from "../pages/home/Home";
 
 export const routes = () => {

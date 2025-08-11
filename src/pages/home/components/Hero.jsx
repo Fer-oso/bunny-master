@@ -2,7 +2,7 @@ import bunnyImage from '/img/bunny-mascota.svg';
 
 export const Hero = () => { 
   return (
-    <div className="mx-auto mt-60 min-h-screen  y-3 relative bg-gradient-to-br lg:py-0 px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto mt-60 xl:mt-40 xl:min-h-[550px] min-h-screen  y-3 relative bg-gradient-to-br lg:py-0 px-4 sm:px-6 lg:px-8">
       
       <div className="absolute inset-0 overflow-hidden pointer-events-none" >
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />

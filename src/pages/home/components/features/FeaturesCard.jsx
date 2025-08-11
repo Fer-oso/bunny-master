@@ -1,7 +1,6 @@
 export const FeaturesCard = ({
   title,
   description,
-  icon,
   urlImage,
   buttonText,
   reverse = false,
