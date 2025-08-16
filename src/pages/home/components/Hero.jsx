@@ -1,15 +1,17 @@
+import { GeneralContainer } from './GeneralContainer';
 import bunnyImage from '/img/bunny-mascota.svg';
 
 export const Hero = () => { 
   return (
-    <div className="mx-auto mt-18 bg-gradient-to-br lg:mt-20  lg:min-h-[550px]  2xl:min-h-[648px] lg:px-2 ">
+    <GeneralContainer>
+<div className="mx-auto relative lg:min-h-[550px] 2xl:min-h-[648px] ">
       
       <div className="absolute inset-0 overflow-hidden pointer-events-none" >
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 lg:bg-amber-200/20 rounded-full blur-3xl :bg-amber-200/0" />
         <div className="absolute top-1/2 right-0 w-64 h-32 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
       </div>
-<div className="container flex flex-col lg:flex-row items-center">
+<div className=" flex flex-col lg:flex-row items-center ">
         <div className="w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left ">
 
           <div className="flex items-center space-x-2 text-xs sm:text-base md:text-lg lg:text-xl text-primary ">
@@ -37,5 +39,9 @@ export const Hero = () => {
         </div>
       </div>
     </div>
+
+
+    </GeneralContainer>
+    
   );
 }

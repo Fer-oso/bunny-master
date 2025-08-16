@@ -1,5 +1,3 @@
-import { Logo } from "../logo/Logo";
-
 import { 
   Mail, 
   Phone, 
