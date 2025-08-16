@@ -8,7 +8,7 @@ export default function NavBar() {
 
   return (
     <nav className="shadow-md top-0 text-xs fixed overflow-hidden z-20 w-full bg-white dark:bg-gray-100/50 backdrop-blur-2xl">
-      <div className=" mx-auto px-2 sm:px-0 flex items-center justify-between sm:max-w-screen-sm  md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+      <div className=" mx-auto sm:px-0 flex items-center justify-between sm:max-w-screen-sm  md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
       <Logo height="75px"/>
 
         {/* Botón hamburguesa (mobile) */}
