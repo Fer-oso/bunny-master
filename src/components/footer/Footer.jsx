@@ -28,7 +28,7 @@ export const Footer = () => {
       <div className="relative">
         
         {/* Sección principal del footer */}
-        <div className="max-w-7xl mx-auto py-16 lg:py-20 ">
+        <div className="max-w-7xl mx-auto py-16 lg:py-20 p-3 xl:p-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
             
             {/* Columna 1: Información de la empresa */}

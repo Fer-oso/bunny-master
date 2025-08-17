@@ -65,8 +65,8 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-20 items-center">
           
           {/* Contenido de texto - Lado izquierdo */}
-          <div className="  -mt-50  lg:pr-8">
-            <div className="space-y-6">
+          <div className="">
+            <div className="space-y-6 p-3 xl:p-0">
               <div className="inline-block">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-[#ff66c4] via-[#46d5e7] to-[#ff66c4] 
@@ -88,7 +88,7 @@ const ServicesSection = () => {
             </div>
 
             {/* Estadísticas */}
-            <div className="grid grid-cols-2 gap-8 mt-10 ">
+            <div className="grid grid-cols-2 gap-8 mt-10 p-3 xl:p-0 ">
               <div className="">
                 <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#955c52] to-[#955c52] bg-clip-text text-transparent">
                   50+
@@ -104,7 +104,7 @@ const ServicesSection = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="">
+            <div className="p-3 xl:p-0">
               <button className=" mt-10 group/btn relative inline-flex items-center gap-3 
                          bg-gradient-to-r from-[#ff66c4] to-[#46d5e7] 
                          hover:from-[#46d5e7] hover:to-[#ff66c4]

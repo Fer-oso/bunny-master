@@ -11,7 +11,7 @@ export const Hero = () => {
         <div className="absolute top-1/2 right-0 w-64 h-32 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
       </div>
 
-      <div className=" flex flex-col lg:flex-row items-center  lg:py-30 xl:py-10  2xl:py-40">
+      <div className=" flex flex-col lg:flex-row items-center px-3 xl:px-0  lg:py-0 xl:py-10  2xl:py-40">
 
         <div className="w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
 
@@ -36,7 +36,7 @@ export const Hero = () => {
         </div>
 
         <div className="w-full lg:w-1/3 flex justify-center lg:justify-end">
-          <img src={bunnyImage} alt="Bunny Mascot" className=" lg:w-full object-contain" />
+          <img src={bunnyImage} alt="Bunny Mascot" className="lg:w-full object-contain w-92" />
         </div>
       </div>
     </div>
