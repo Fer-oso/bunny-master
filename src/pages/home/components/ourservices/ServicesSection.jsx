@@ -50,7 +50,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen xl:min-h-auto  py-20  px-4 sm:px-6 lg:px-8">
+    <section className="relative min-h-screen xl:min-h-auto  py-20 ">
       
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
