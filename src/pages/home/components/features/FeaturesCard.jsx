@@ -37,11 +37,11 @@ export const FeaturesCard = ({
                          transition-all duration-300 ease-out
                          hover:scale-[1.02] active:scale-[0.98]
                          focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:ring-offset-2">
-          <span className="relative z-10">{buttonText}</span>
+          <span className="relative z-10 text-white">{buttonText}</span>
           
           {/* Flecha con animación */}
           <svg 
-            className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" 
+            className="w-4 h-4 text-white transition-transform duration-300 group-hover/btn:translate-x-1" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24"

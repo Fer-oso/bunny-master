@@ -113,8 +113,8 @@ const ServicesSection = () => {
                                transition-all duration-300 ease-out
                                hover:scale-[1.02] active:scale-[0.98]
                                focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:ring-offset-2">
-                <Link className="relative z-10" to='/servicios'>Ver Todos los Servicios</Link>
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <Link className="relative z-10 text-white" to='/servicios'>Ver Todos los Servicios</Link>
+                <ArrowRight className="w-4 h-4 text-white transition-transform duration-300 group-hover:translate-x-1" />
                 
                 {/* Efecto de brillo */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/0 via-white/20 to-white/0 

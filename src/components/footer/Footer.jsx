@@ -17,7 +17,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gradient-to-br from-black via-black-800 to-slate-900">
+    <footer className="px-3 xl:px-0 shadow-md top-0  overflow-hidden z-20 w-full  bg-gradient-to-br from-black via-black-800 to-slate-900 backdrop-blur-2xl">
       
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -25,11 +25,11 @@ export const Footer = () => {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-800/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative">
+      <div className=" mx-auto sm:px-0 items-center sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
         
         {/* Sección principal del footer */}
-        <div className="max-w-7xl mx-auto py-16 lg:py-20 p-3 xl:p-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="max-w-7xl mx-auto py-16 lg:py-20  xl:p-0">
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-8 ">
             
             {/* Columna 1: Información de la empresa */}
             <div className="lg:col-span-2 space-y-6">
@@ -147,7 +147,7 @@ export const Footer = () => {
 
         {/* Sección inferior */}
         <div className="border-t backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="max-w-7xl mx-auto px-2  py-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               
               {/* Copyright */}

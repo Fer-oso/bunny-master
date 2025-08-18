@@ -7,7 +7,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="md px-3 xl:px-0 shadow-md top-0 text-xs fixed overflow-hidden z-20 w-full bg-white dark:bg-gray-100/50 backdrop-blur-2xl">
+    <nav className=" px-3 xl:px-0 shadow-md top-0 text-xs fixed overflow-hidden z-20 w-full bg-white dark:bg-gray-100/50 backdrop-blur-2xl">
       <div className=" mx-auto sm:px-0 flex items-center justify-between sm:max-w-screen-sm  md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
       <Logo height="75px"/>
 

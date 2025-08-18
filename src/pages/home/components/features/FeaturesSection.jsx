@@ -47,7 +47,7 @@ export const FeaturesSection = () => {
       <div className="relative max-w-7xl mx-auto">
         
         {/* Header de la sección */}
-        <div className="text-center mb-20 lg:mb-0 space-y-6">
+        <div className="text-center  lg:mb-0 space-y-6">
           <div className="inline-block">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-[#46d5e7] via-[#46d5e7] to-[#955c52] 

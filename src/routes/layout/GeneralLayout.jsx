@@ -13,6 +13,7 @@ export const GeneralLayout = () => {
       <NavBar />
       <GeneralContainer>
         <Outlet />
+        
       </GeneralContainer>
       <Footer />
     </div>
