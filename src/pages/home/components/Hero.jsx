@@ -11,7 +11,7 @@ export const Hero = () => {
         <div className="absolute top-1/2 right-0 w-64 h-32 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
       </div>
 
-      <div className=" flex flex-col lg:flex-row items-center px-1 xl:px-0  lg:py-0 xl:py-10  2xl:py-40">
+      <div className=" flex flex-col lg:flex-row items-center px-2 xl:px-0  lg:py-0 xl:py-10  2xl:py-40">
 
         <div className="w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
 
@@ -22,7 +22,7 @@ export const Hero = () => {
             </strong>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
+          <h2 className="text-3xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
             <span className="bg-gradient-to-r from-[#ff66c4] to-[#46d5e7] 
                              bg-clip-text text-transparent">
               Transformamos ideas en resultados digitales reales
