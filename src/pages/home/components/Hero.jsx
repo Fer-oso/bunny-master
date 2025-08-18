@@ -22,7 +22,7 @@ export const Hero = () => {
             </strong>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+          <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
             <span className="bg-gradient-to-r from-[#ff66c4] to-[#46d5e7] 
                              bg-clip-text text-transparent">
               Transformamos ideas en resultados digitales reales

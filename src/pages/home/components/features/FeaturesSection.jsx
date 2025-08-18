@@ -47,7 +47,7 @@ export const FeaturesSection = () => {
       <div className="relative max-w-7xl mx-auto">
         
         {/* Header de la sección */}
-        <div className="text-center  lg:mb-0 space-y-6">
+        <div className="text-center  lg:mb-0 space-y-1 px-2 lg:px-0 ">
           <div className="inline-block">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-[#46d5e7] via-[#46d5e7] to-[#955c52] 
@@ -57,7 +57,7 @@ export const FeaturesSection = () => {
             </h2>
           </div>
           
-          <p className="text-lg sm:text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-medium">
+          <p className="mt-6 text-lg sm:text-base md:text-lg text-slate-600  font-medium  leading-relaxed ">
             Descubre las características que distinguen nuestra propuesta y cómo pueden 
             potenciar el crecimiento de tu organización
           </p>
