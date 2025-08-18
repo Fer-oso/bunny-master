@@ -35,7 +35,7 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen lg:py-0 lg:-mt-5 ">
+    <section className="relative min-h-screen overflow-hidden">
       
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -44,10 +44,10 @@ export const FeaturesSection = () => {
         <div className="absolute top-1/2 left-0 w-64 h-64 bg-purple-200/15 rounded-full blur-3xl transform -translate-x-1/2" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl ">
         
         {/* Header de la sección */}
-        <div className="text-center  lg:mb-0 space-y-1 px-2 lg:px-0 ">
+        <div className="text-center  lg:mb-0 space-y-1 px-2 md:px-0 ">
           <div className="inline-block">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-[#46d5e7] via-[#46d5e7] to-[#955c52] 
@@ -57,7 +57,7 @@ export const FeaturesSection = () => {
             </h2>
           </div>
           
-          <p className="mt-6 text-lg sm:text-base md:text-lg text-slate-600  font-medium  leading-relaxed ">
+          <p className="text-lg sm:text-base md:text-lg text-slate-600  font-medium  leading-relaxed ">
             Descubre las características que distinguen nuestra propuesta y cómo pueden 
             potenciar el crecimiento de tu organización
           </p>
