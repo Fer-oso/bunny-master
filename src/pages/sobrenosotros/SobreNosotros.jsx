@@ -10,7 +10,7 @@ export default function SobreNosotros() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl" />
         <div className="absolute top-1/2 right-0 w-64 h-32 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
       </div>
-       <div className="flex flex-col lg:flex-row items-center px-2  lg:px-2  lg:py-3 xl:py-10  2xl:py-40 ">
+       <div className="flex flex-col lg:flex-row items-center px-2  lg:px-0  lg:py-3 xl:py-10  2xl:py-40 ">
 
         <div className="w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
 

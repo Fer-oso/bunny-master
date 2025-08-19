@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import { Footer } from "../../components/footer/Footer";
 import NavBar from "../../components/navbar/NavBar";
 import ScrollToTop from "../../hooks/ScrollToTop";
-import { GeneralContainer } from "../../pages/home/components/GeneralContainer";
+import { GeneralContainer } from "./GeneralContainer";
 
 export const GeneralLayout = () => {
   return (
