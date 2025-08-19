@@ -49,7 +49,7 @@ export const FeaturesSection = () => {
         {/* Header de la sección */}
         <div className="text-center  lg:mb-0 space-y-1 px-2 md:px-0 ">
           <div className="inline-block">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
+          <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-[#46d5e7] via-[#46d5e7] to-[#955c52] 
                              bg-clip-text text-transparent">
                 Nuestras Características
@@ -57,7 +57,7 @@ export const FeaturesSection = () => {
             </h2>
           </div>
           
-          <p className="text-lg sm:text-base md:text-lg text-slate-600  font-medium  leading-relaxed ">
+          <p className="text-lg sm:text-base md:text-lg text-slate-600  font-medium  leading-relaxed text-primary-color ">
             Descubre las características que distinguen nuestra propuesta y cómo pueden 
             potenciar el crecimiento de tu organización
           </p>

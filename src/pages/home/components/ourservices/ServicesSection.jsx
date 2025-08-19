@@ -65,10 +65,10 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-20 items-center">
           
           {/* Contenido de texto - Lado izquierdo */}
-          <div className="px-2 lg:px-0">
+          <div className="px-2 xl:px-0">
             <div className="space-y-6 ">
               <div className="inline-block ">
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
+              <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-[#ff66c4] via-[#46d5e7] to-[#ff66c4] 
                              bg-clip-text text-transparent">
                 Nuestros servicios
@@ -76,8 +76,8 @@ const ServicesSection = () => {
               </h2>
               </div>
               
-              <p className="text-lg sm:text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-medium">
-                Descubre las soluciones que distinguen nuestra propuesta y cómo pueden 
+              <p className=" text-sm sm:text-base md:text-lg text-slate-600 text-primary-color font-medium max-w-2xl leading-relaxed ">
+              Descubre las soluciones que distinguen nuestra propuesta y cómo pueden 
                 potenciar el crecimiento de tu organización con tecnología de vanguardia.
               </p>
               
