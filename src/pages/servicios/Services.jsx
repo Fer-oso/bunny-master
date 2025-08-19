@@ -35,7 +35,7 @@ const services = [
 
 export const Services =()=> {
   return (
-    <section className="mt-17 relative">
+    <section className="relative">
 {/* Sección de video */}
         <VideoSection/>
 

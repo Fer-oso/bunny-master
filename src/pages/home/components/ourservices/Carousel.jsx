@@ -12,7 +12,7 @@ export const Carousel = ({services}) => {
   return (
 <>{/* Slider vertical - Lado derecho */}
           <div className="relative">
-            <div className="bg-[gray]/10 backdrop-blur-xl rounded-3xl p-3  border border-slate-200/20 
+            <div className="bg-[gray]/10 backdrop-blur-xl rounded-3xl p-2  border border-slate-200/20 
                            shadow-xl shadow-teal-100/20 overflow-hidden">
               
               {/* Header del slider */}

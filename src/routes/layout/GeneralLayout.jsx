@@ -12,8 +12,7 @@ export const GeneralLayout = () => {
       <ScrollToTop />
       <NavBar />
       <GeneralContainer>
-        <Outlet />
-        
+        <Outlet /> 
       </GeneralContainer>
       <Footer />
     </div>

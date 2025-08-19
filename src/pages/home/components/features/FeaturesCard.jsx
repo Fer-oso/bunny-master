@@ -7,7 +7,7 @@ export const FeaturesCard = ({
   gradientClass
 }) => {
   return (
-    <div className={`group relative overflow-hidden bg-[#ff66c4]/10 backdrop-blur-xl rounded-3xl p-3 xl:p-20 
+    <div className={`group relative overflow-hidden bg-[#ff66c4]/10 backdrop-blur-xl rounded-3xl px-2 xl:p-20 
                     border border-slate-200/20 shadow-xl shadow-teal-100/20 
                     transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-teal-200/30
                     grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-20 items-center hover:bg-[#ff66c4]/40

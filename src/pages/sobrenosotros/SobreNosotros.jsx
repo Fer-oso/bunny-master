@@ -1,9 +1,9 @@
 import { TeamCard } from "./components/TeamCard";
 import { motion } from "framer-motion";
 
-import bunnyImage from '/img/bunnymascota/bunny-mascota-despedida.jpeg';
+import bunnyImage from '/img/bunnymascota/bunny-mascota-computadora.png';
 
-export default function MiComponenteSpline() {
+export default function SobreNosotros() {
   const team = [
     {
       name: "Yazmin Ferreyra",
@@ -39,17 +39,18 @@ export default function MiComponenteSpline() {
 
   return (
    
-      <div className="mx-auto mt-60 xl:mt-50 xl:min-h-[550px] min-h-screen  y-3 relative bg-gradient-to-br lg:py-0 px-4 sm:px-6 lg:px-8">
+      <>
       
       <div className="absolute inset-0 overflow-hidden pointer-events-none" >
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl" />
         <div className="absolute top-1/2 right-0 w-64 h-32 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
       </div>
-<div className="container flex flex-col lg:flex-row items-center">
-        <div className="w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left -mt-20">
 
-          <div className="flex items-center space-x-2 text-xs sm:text-base md:text-lg lg:text-xl text-primary ">
+<div className="flex flex-col lg:flex-row items-center px-2  lg:px-0  lg:py-0 xl:py-10  2xl:py-40">
+  <div className="w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+
+          <div className="flex items-center space-x-2 text-xs sm:text-base md:text-lg lg:text-xl text-primary mt-2 lg:mt-0 ">
             <i className="fi fi-rs-display-code"></i>
             <strong className="uppercase tracking-wide font-semibold">
             Bunny creations world
@@ -84,8 +85,8 @@ export default function MiComponenteSpline() {
       </div>
     </div>
 
-    <div className="w-full lg:w-1/3 flex justify-center lg:justify-end">
-          <img src={bunnyImage} alt="Bunny Mascot" className="w-64 h-64 md:w-80 md:h-80 lg:w-[500px] object-contain" />
+    <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <img src={bunnyImage} alt="Bunny Mascot" className="lg:w-full object-contain w-72" />
         </div>
       </div>
 
@@ -119,7 +120,7 @@ export default function MiComponenteSpline() {
           </motion.div>
         ))}
       </div>
-    </div>
+    </>
 
  
 

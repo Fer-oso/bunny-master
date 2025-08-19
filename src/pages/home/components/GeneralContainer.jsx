@@ -6,7 +6,7 @@ export const GeneralContainer = ({ children, styles }) => {
         sm:max-w-screen-sm
         md:max-w-screen-md
         lg:max-w-screen-lg
-        xl:max-w-screen-xl "    styles={styles}>
+        xl:max-w-screen-xl mt-17"    styles={styles}>
             {children}
         </div>
     )
