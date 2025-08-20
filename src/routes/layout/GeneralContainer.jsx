@@ -1,13 +1,9 @@
-export const GeneralContainer = ({ children, styles }) => {
+import { Container } from "./Container"
+
+export const GeneralContainer = ({ children, className }) => {
     return (
-        <div className="relative
-        bg-gradient-to-br
-        mx-auto
-        sm:max-w-screen-sm
-        md:max-w-screen-md
-        lg:max-w-screen-lg
-        xl:max-w-screen-xl mt-17"    styles={styles}>
+        <Container className={`relative bg-gradient-to-br mt-17 ${className}`}>
             {children}
-        </div>
+        </Container>
     )
 }

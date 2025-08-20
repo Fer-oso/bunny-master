@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import { GeneralLayout } from "./layout/GeneralLayout";
 import Services from "../pages/servicios/Services";
-import { Home } from "../pages/home/Home";
+import Home from "../pages/home/Home";
 import SobreNosotros from "../pages/sobrenosotros/SobreNosotros";
 
 export const routes = () => {

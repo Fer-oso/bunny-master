@@ -1,4 +1,5 @@
 import { ArrowRight, Check, Star } from "lucide-react";
+import { Button } from "../../../components/button/Button";
 
 export const ServiceCard = ({ service, index, isHovered, onHover, onLeave }) => {
     const IconComponent = service.icon;
@@ -74,10 +75,10 @@ export const ServiceCard = ({ service, index, isHovered, onHover, onLeave }) => 
                   <span className="text-gray-500 text-sm ml-1">USD</span>
                 )}
               </div>
-              <button className={`group/btn bg-gradient-to-r ${service.gradient} text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center gap-2 hover:gap-3`}>
+              <Button className={`${service.gradient}`}>
                 <span>Consultar</span>
                 <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
-              </button>
+              </Button>
             </div>
           </div>
   

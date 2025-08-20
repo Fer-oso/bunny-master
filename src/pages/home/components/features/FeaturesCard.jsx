@@ -1,3 +1,6 @@
+import { Button } from "../../../../components/button/Button";
+import { button } from "../../../../style/buttonPrincipal";
+
 export const FeaturesCard = ({
   title,
   description,
@@ -29,15 +32,8 @@ export const FeaturesCard = ({
           {description}
         </p>
         
-        <button className="group/btn relative inline-flex items-center gap-3 
-                         bg-gradient-to-r from-[#ff66c4] to-[#46d5e7] 
-                         hover:from-[#46d5e7] hover:to-[#ff66c4]
-                         text-black/90 font-semibold px-8 py-4 rounded-xl
-                         shadow-lg shadow-teal-500/25 hover:shadow-xl hover:shadow-teal-500/35
-                         transition-all duration-300 ease-out
-                         hover:scale-[1.02] active:scale-[0.98]
-                         focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:ring-offset-2">
-          <span className="relative z-10 text-white">{buttonText}</span>
+        <Button className={`${button.generalbutton}`}>
+          <span className="relative z-10">{buttonText}</span>
           
           {/* Flecha con animación */}
           <svg 
@@ -52,7 +48,7 @@ export const FeaturesCard = ({
           {/* Efecto de brillo en el botón */}
           <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/0 via-white/20 to-white/0 
                          opacity-0 group-hover/btn:opacity-100 group-hover/btn:animate-pulse transition-opacity duration-300" />
-        </button>
+        </Button>
       </div>
 
       {/* Imagen/Icono */}

@@ -1,42 +1,44 @@
-import React from 'react';
-import { Star, Zap, Shield } from 'lucide-react';
-import { FeaturesCard } from './FeaturesCard';
+import React from "react";
+import { Star, Zap, Shield } from "lucide-react";
+import { FeaturesCard } from "./FeaturesCard";
 
 export const FeaturesSection = () => {
-    
   const features = [
     {
       title: "Diseño Profesional",
-      description: "Interfaces elegantes y funcionales que reflejan la calidad de tu marca. Cada detalle está cuidadosamente pensado para ofrecer una experiencia excepcional a tus usuarios.",
+      description:
+        "Interfaces elegantes y funcionales que reflejan la calidad de tu marca. Cada detalle está cuidadosamente pensado para ofrecer una experiencia excepcional a tus usuarios.",
       icon: Star,
-      urlImage:"./img/servicios/1.jpg",
+      urlImage: "./img/servicios/1.jpg",
       buttonText: "Explorar más",
       reverse: false,
-      gradientClass: "bg-gradient-to-br from-violet-500 via-purple-600 to-indigo-700"
+      gradientClass:
+        "bg-gradient-to-br from-violet-500 via-purple-600 to-indigo-700",
     },
     {
       title: "Optimización Avanzada",
-      description: "Rendimiento superior con tiempos de carga optimizados y una experiencia fluida en todos los dispositivos. La eficiencia técnica al servicio de tus objetivos de negocio.",
+      description:
+        "Rendimiento superior con tiempos de carga optimizados y una experiencia fluida en todos los dispositivos. La eficiencia técnica al servicio de tus objetivos de negocio.",
       icon: Zap,
-      urlImage:"./img/servicios/2.jpg",
+      urlImage: "./img/servicios/2.jpg",
       buttonText: "Ver detalles",
       reverse: true,
-      gradientClass: "bg-gradient-to-br from-pink-500 via-rose-600 to-red-700"
+      gradientClass: "bg-gradient-to-br from-pink-500 via-rose-600 to-red-700",
     },
     {
       title: "Confianza Total",
-      description: "Seguridad robusta con protocolos de vanguardia y sistemas de respaldo confiables. La tranquilidad que necesitas para enfocar tu energía en hacer crecer tu negocio.",
+      description:
+        "Seguridad robusta con protocolos de vanguardia y sistemas de respaldo confiables. La tranquilidad que necesitas para enfocar tu energía en hacer crecer tu negocio.",
       icon: Shield,
-      urlImage:"./img/servicios/3.jpg",
+      urlImage: "./img/servicios/3.jpg",
       buttonText: "Conocer más",
       reverse: false,
-      gradientClass: "bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-700"
-    }
+      gradientClass: "bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-700",
+    },
   ];
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />
@@ -45,23 +47,24 @@ export const FeaturesSection = () => {
       </div>
 
       <div className="relative max-w-7xl ">
-        
         {/* Header de la sección */}
         <div className="text-center  lg:mb-0 space-y-1 px-2 md:px-0 ">
           <div className="inline-block">
-          <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
-              <span className="bg-gradient-to-r from-[#46d5e7] via-[#46d5e7] to-[#955c52] 
-                             bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
+              <span
+                className="bg-gradient-to-r from-[#46d5e7] via-[#46d5e7] to-[#955c52] 
+                             bg-clip-text text-transparent"
+              >
                 Nuestras Características
               </span>
             </h2>
           </div>
-          
+
           <p className="text-lg sm:text-base md:text-lg text-slate-600  font-medium  leading-relaxed text-primary-color ">
-            Descubre las características que distinguen nuestra propuesta y cómo pueden 
-            potenciar el crecimiento de tu organización
+            Descubre las características que distinguen nuestra propuesta y cómo
+            pueden potenciar el crecimiento de tu organización
           </p>
-          
+
           {/* Línea decorativa */}
           <div className="flex justify-center pt-8">
             <div className="h-1 w-24 bg-gradient-to-r from-teal-500 to-amber-700 rounded-full" />
@@ -71,15 +74,15 @@ export const FeaturesSection = () => {
         {/* Grid de características */}
         <div className="space-y-20 lg:space-y-5">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className="opacity translate-y-8 animate-fade-in-up"
-              style={{ 
+              style={{
                 animationDelay: `${index * 200}ms`,
-                animationFillMode: 'forwards'
+                animationFillMode: "forwards",
               }}
             >
-            <FeaturesCard {...feature}/>
+              <FeaturesCard {...feature} />
             </div>
           ))}
         </div>
@@ -87,4 +90,3 @@ export const FeaturesSection = () => {
     </section>
   );
 };
-
