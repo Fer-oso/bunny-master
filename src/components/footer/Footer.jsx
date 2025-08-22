@@ -9,6 +9,7 @@ import {
   ArrowUp,
   Heart
 } from 'lucide-react';
+import { Container } from '../../routes/layout/Container';
 
 export const Footer = () => {
 
@@ -18,18 +19,18 @@ export const Footer = () => {
 
   return (
     <footer className="px-3 xl:px-0 shadow-md top-0  overflow-hidden z-20 w-full  bg-gradient-to-br from-black via-black-800 to-slate-900 backdrop-blur-2xl">
-      
+      <Container>
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-800/5 rounded-full blur-3xl" />
       </div>
 
-      <div className=" mx-auto sm:px-0 items-center sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+      <div className=" mx-auto sm:px-0 items-center ">
         
         {/* Sección principal del footer */}
-        <div className="max-w-7xl mx-auto py-16 lg:py-20  xl:p-0">
-          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-8 ">
+        <div className="w-full py-10 lg:py-20  xl:p-0">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-8 ">
             
             {/* Columna 1: Información de la empresa */}
             <div className="lg:col-span-2 space-y-6">
@@ -196,7 +197,9 @@ export const Footer = () => {
             </div>
           </div>
         </div>
+        
       </div>
+      </Container>
     </footer>
   );
 };

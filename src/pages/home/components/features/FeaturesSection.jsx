@@ -46,7 +46,7 @@ export const FeaturesSection = () => {
         <div className="absolute top-1/2 left-0 w-64 h-64 bg-purple-200/15 rounded-full blur-3xl transform -translate-x-1/2" />
       </div>
 
-      <div className="relative max-w-7xl ">
+      <div className="relative w-full">
         {/* Header de la sección */}
         <div className="text-center  lg:mb-0 space-y-1 px-2 md:px-0 ">
           <div className="inline-block">
