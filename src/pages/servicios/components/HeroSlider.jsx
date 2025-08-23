@@ -97,8 +97,13 @@ export const HeroSlider = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed animate-in slide-in-from-bottom-6 duration-700 delay-400" key={`subtitle-${currentSlide}`}>
-            {currentSlideData.subtitle}
+          <p className="text-md 
+          mt-6 sm:text-base md:text-lg text-slate-600 text-primary-color font-medium max-w-2xl
+           mx-auto leading-relaxed animate-in slide-in-from-bottom-6 duration-700 delay-400" key={`subtitle-${currentSlide}`}>
+            {currentSlideData.subtitle} 
+
+           
+
           </p>
         </div>
   

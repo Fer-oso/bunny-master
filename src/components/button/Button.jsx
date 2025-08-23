@@ -1,7 +1,7 @@
 export const Button = ({ children, className }) => {
   return (
     <button
-      className={`bg-gradient-to-r ${className} text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center gap-2 hover:gap-3`}
+      className={`bg-gradient-to-r ${className} cursor-pointer text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center gap-2 hover:gap-3`}
     >
       {children}
     </button>

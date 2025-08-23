@@ -1,11 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { ArrowRight } from "lucide-react";
-
 import { Carousel } from "./Carousel";
-import { Link } from "react-router-dom";
 import { Button } from "../../../../components/button/Button";
-
 import { button } from "../../../../style/buttonPrincipal";
 
 const ServicesSection = () => {
@@ -16,54 +14,35 @@ const ServicesSection = () => {
       description:
         "Gestión inteligente de turnos y citas con interfaz moderna y funcionalidades avanzadas.",
       image:
-        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/img/servicios/sistematurnos.webp",
       link: "https://sistema-turnos-bunny.netlify.app/",
       category: "Gestión",
     },
     {
       id: 2,
-      title: "Sistema de Tickets",
+      title: "Sistema CRM",
       description:
         "Plataforma completa para la gestión de tickets de soporte con seguimiento en tiempo real.",
       image:
-        "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800",
-      link: "https://sistema-tickets-bunny.netlify.app/",
+        "/img/servicios/sistemacrm.webp",
+      link: "https://sistema-crm-bunny.netlify.app/",
       category: "Soporte",
     },
     {
       id: 3,
-      title: "Dashboard Analytics",
+      title: "Sistema de tickets",
       description:
-        "Panel de control con métricas avanzadas y visualización de datos en tiempo real.",
+        "sistema de tickets para gestion de proyectos",
       image:
-        "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/img/servicios/sistematickets.png",
       link: "https://sistema-turnos-bunny.netlify.app/",
       category: "Analytics",
     },
-    {
-      id: 4,
-      title: "E-commerce Platform",
-      description:
-        "Solución completa de comercio electrónico con gestión de inventario y pagos.",
-      image:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-      link: "https://sistema-turnos-bunny.netlify.app/",
-      category: "E-commerce",
-    },
-    {
-      id: 5,
-      title: "CRM Avanzado",
-      description:
-        "Sistema de gestión de relaciones con clientes con automatización inteligente.",
-      image:
-        "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
-      link: "https://sistema-turnos-bunny.netlify.app/",
-      category: "CRM",
-    },
+ 
   ];
 
   return (
-    <section className="relative  py-10  ">
+    <section className="relative py-10 px-2 xl:px-0 ">
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />
@@ -71,11 +50,11 @@ const ServicesSection = () => {
         <div className="absolute top-1/2 right-0 w-64 h-64 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
       </div>
 
-      <div className="relative w-full">
+      <div className="relative w-full ">
         {/* Layout principal: texto izquierda, slider derecha */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-20 items-center">
           {/* Contenido de texto - Lado izquierdo */}
-          <div className="px-2">
+          <div className="">
             <div className="space-y-6 ">
               <div className="inline-block ">
                 <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
@@ -122,22 +101,18 @@ const ServicesSection = () => {
 
             {/* CTA Button */}
             <div className="py-10">
-              <Button
-                className={`${button.generalbutton}`}
-              >
-                <Link className="relative z-10 text-white" to="/servicios">
+              <Link className="relative z-10 text-white" to="/servicios">
+                <Button className={`${button.generalbutton} `}>
                   Ver Todos los Servicios
-                </Link>
-                <ArrowRight className="w-4 h-4 text-white transition-transform duration-300 group-hover:translate-x-1" />
-                {/* Efecto de brillo */}
-                <div
-                  className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/0 via-white/20 to-white/0 
+                  <ArrowRight className="w-4 h-4 text-white transition-transform duration-300 group-hover:translate-x-1" />
+                  {/* Efecto de brillo */}
+                  <div
+                    className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/0 via-white/20 to-white/0 
                                opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-300"
-                />
-              </Button>
-        
+                  />
+                </Button>
+              </Link>
             </div>
-
           </div>
 
           {/* Slider vertical - Lado derecho */}

@@ -9,8 +9,8 @@ export const Hero = () => {
         <div className="absolute top-1/2 right-0 w-64 h-32 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
       </div>
 
-      <div className=" flex flex-col lg:flex-row items-center px-2 lg:px-0 lg:py-0 xl:py-10 2xl:py-40 ">
-        <div className="w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+      <div className=" flex flex-col lg:flex-row items-center px-2  ">
+        <div className=" w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
           <div className="flex items-center space-x-2 text-xs sm:text-base md:text-lg lg:text-xl text-primary mt-2 lg:mt-0">
             <i className="fi fi-rs-display-code"></i>
             <strong className="uppercase tracking-wide font-semibold ">
@@ -40,7 +40,7 @@ export const Hero = () => {
           <img
             src={bunnyImage}
             alt="Bunny Mascota"
-            className="lg:w-96 object-contain w-72"
+            className=" object-contain w-72 xl:w-96 2xl:w-full"
           />
         </div>
       </div>
