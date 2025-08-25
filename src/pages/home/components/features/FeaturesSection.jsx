@@ -38,15 +38,8 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      {/* Elementos decorativos de fondo */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-0 w-64 h-64 bg-purple-200/15 rounded-full blur-3xl transform -translate-x-1/2" />
-      </div>
-
-      <div className="relative w-full">
+ 
+      <div className="relative w-full min-h-screen overflow-hidden">
         {/* Header de la sección */}
         <div className="text-center  lg:mb-0 space-y-1 px-2 md:px-0 ">
           <div className="inline-block">
@@ -60,8 +53,8 @@ export const FeaturesSection = () => {
             </h2>
           </div>
 
-          <p className="text-lg sm:text-base md:text-lg text-slate-600  font-medium  leading-relaxed text-primary-color ">
-            Descubre las características que distinguen nuestra propuesta y cómo
+          <p className="mt-6 text-sm sm:text-base md:text-lg text-slate-600 text-primary-color font-medium max-w-2xl leading-relaxed ">
+          Descubre las características que distinguen nuestra propuesta y cómo
             pueden potenciar el crecimiento de tu organización
           </p>
 
@@ -87,6 +80,6 @@ export const FeaturesSection = () => {
           ))}
         </div>
       </div>
-    </section>
+ 
   );
 };

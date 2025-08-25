@@ -5,6 +5,7 @@ import ServicesSection from "./components/ourservices/ServicesSection"
 export default function Home(){
     return (
      <>  
+     
      <Hero />
      <FeaturesSection />
      <ServicesSection />

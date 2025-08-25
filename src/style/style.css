@@ -5,6 +5,9 @@ body {
   background-image: linear-gradient(to bottom right, #f8fafc, #f1f5f9, #e2e8f0);
 }
 
+.p{
+  color: #955c52;
+}
   .bg-primary-color {
     background-color: #46d5e7;
   }
@@ -13,7 +16,7 @@ body {
     color: #46d5e7;
   }
   .secund-color{
-    color:#ff66c4
+    color:#ffb8b8
   }
 
   .text-primary-color{

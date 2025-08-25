@@ -1,17 +1,12 @@
 import bunnyImage from "/img/bunny-mascota.svg";
+//import bunnyImage from "/img/bunnymascota/bunny-pet-2.png";
 
 export const Hero = () => {
   return (
-    <div className="mx-auto 2xl:min-h-[900px] lg:h-[590px] ">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 lg:bg-amber-200/20 rounded-full blur-3xl :bg-amber-200/0" />
-        <div className="absolute top-1/2 right-0 w-64 h-32 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
-      </div>
-
-      <div className=" flex flex-col lg:flex-row items-center px-2  ">
+    <>
+      <div className=" mx-auto flex flex-col lg:flex-row items-center min-h-screen px-2 lg:px-0">
         <div className=" w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-          <div className="flex items-center space-x-2 text-xs sm:text-base md:text-lg lg:text-xl text-primary mt-2 lg:mt-0">
+          <div className="flex items-center space-x-2 text-xs sm:text-base md:text-lg lg:text-xl text-primary mt-2 lg:mt-0 px-1">
             <i className="fi fi-rs-display-code"></i>
             <strong className="uppercase tracking-wide font-semibold ">
               Bunny creations world
@@ -20,10 +15,17 @@ export const Hero = () => {
 
           <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
             <span
-              className="bg-gradient-to-r from-[#ff66c4] to-[#46d5e7] 
+              className="bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8]/90 to-[#ffb8b8]/80
                              bg-clip-text text-transparent"
             >
-              Transformamos ideas en resultados digitales reales
+              Transformamos ideas en
+            </span>
+            <span> </span>
+            <span
+              className="bg-gradient-to-r from-[#46d5e7]/70 via-[#46d5e7]/80 to-[#46d5e7]
+                             bg-clip-text text-transparent"
+            >
+              resultados digitales reales
             </span>
           </h2>
 
@@ -40,10 +42,10 @@ export const Hero = () => {
           <img
             src={bunnyImage}
             alt="Bunny Mascota"
-            className=" object-contain w-72 xl:w-96 2xl:w-full"
+            className=" "
           />
         </div>
       </div>
-    </div>
+    </>
   );
 };
