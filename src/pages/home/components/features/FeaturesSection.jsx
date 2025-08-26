@@ -1,6 +1,6 @@
-import React from "react";
 import { Star, Zap, Shield } from "lucide-react";
 import { FeaturesCard } from "./FeaturesCard";
+import { Separator } from "../../../../components/separator/Separator";
 
 export const FeaturesSection = () => {
   const features = [
@@ -38,48 +38,51 @@ export const FeaturesSection = () => {
   ];
 
   return (
- 
-      <div className="relative w-full min-h-screen overflow-hidden">
-        {/* Header de la sección */}
-        <div className="text-center  lg:mb-0 space-y-1 px-2 md:px-0 ">
-          <div className="inline-block">
-            <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
-              <span
-                className="bg-gradient-to-r from-[#46d5e7] via-[#46d5e7] to-[#955c52] 
+    <div className="relative w-full min-h-screen overflow-hidden ">
+      {/* Header de la sección */}
+      <div className="text-center  lg:mb-0 space-y-1 px-2 md:px-0  ">
+        <div className="inline-block">
+          <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
+            <span
+              className="bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] 
                              bg-clip-text text-transparent"
-              >
-                Nuestras Características
-              </span>
-            </h2>
-          </div>
-
-          <p className="mt-6 text-sm sm:text-base md:text-lg text-slate-600 text-primary-color font-medium max-w-2xl leading-relaxed ">
-          Descubre las características que distinguen nuestra propuesta y cómo
-            pueden potenciar el crecimiento de tu organización
-          </p>
-
-          {/* Línea decorativa */}
-          <div className="flex justify-center pt-8">
-            <div className="h-1 w-24 bg-gradient-to-r from-teal-500 to-amber-700 rounded-full" />
-          </div>
-        </div>
-
-        {/* Grid de características */}
-        <div className="space-y-20 lg:space-y-5">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="opacity translate-y-8 animate-fade-in-up"
-              style={{
-                animationDelay: `${index * 200}ms`,
-                animationFillMode: "forwards",
-              }}
             >
-              <FeaturesCard {...feature} />
-            </div>
-          ))}
+              Nuestras
+            </span>
+            <br></br>
+            <span
+              className="bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/75 to-[#46d5e7]/80 
+                             bg-clip-text text-transparent"
+            >
+              Características
+            </span>
+          </h2>
         </div>
+
+        <p className="mt-6 text-sm sm:text-base md:text-lg m-auto  text-primary-color font-medium max-w-2xl leading-relaxed ">
+          Descubre las características que distinguen nuestra propuesta y cómo
+          pueden potenciar el crecimiento de tu organización
+        </p>
       </div>
- 
+
+      {/* Línea decorativa */}
+      <Separator />
+
+      {/* Grid de características */}
+      <div className="space-y-20 lg:space-y-5">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="opacity translate-y-8 animate-fade-in-up"
+            style={{
+              animationDelay: `${index * 200}ms`,
+              animationFillMode: "forwards",
+            }}
+          >
+            <FeaturesCard {...feature} />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };

@@ -63,3 +63,31 @@ body {
 
 
 
+/*  Agregar estas animaciones personalizadas al CSS global o Tailwind config */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-delay {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float-delay 2.5s ease-in-out infinite 0.5s;
+}
+
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite 1s;
+}
