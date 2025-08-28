@@ -18,7 +18,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="px-3 xl:px-0 shadow-md top-0  overflow-hidden z-20 w-full  bg-gradient-to-br from-black via-black-800 to-slate-900 backdrop-blur-2xl">
+    <footer className="px-2 xl:px-0 shadow-md top-0  overflow-hidden z-20 w-full  bg-gradient-to-br from-black via-black-800 to-slate-900 backdrop-blur-2xl">
       <Container>
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -29,7 +29,7 @@ export const Footer = () => {
       <div className=" mx-auto sm:px-0 items-center ">
         
         {/* Sección principal del footer */}
-        <div className="w-full py-10 lg:py-20  xl:p-0">
+        <div className="w-full py-10 lg:py-20 xl:py-10">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-8 ">
             
             {/* Columna 1: Información de la empresa */}

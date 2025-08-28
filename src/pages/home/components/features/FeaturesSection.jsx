@@ -1,6 +1,7 @@
 import { Star, Zap, Shield } from "lucide-react";
 import { FeaturesCard } from "./FeaturesCard";
 import { Separator } from "../../../../components/separator/Separator";
+import { P } from "../../../../components/paragraph/P";
 
 export const FeaturesSection = () => {
   const features = [
@@ -38,11 +39,11 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden ">
+    <div className="relative w-full min-h-screen overflow-hidden lg:py-0">
       {/* Header de la sección */}
       <div className="text-center  lg:mb-0 space-y-1 px-2 md:px-0  ">
         <div className="inline-block">
-          <h2 className="text-4xl sm:text-5xl  lg:text-6xl font-bold leading-tight tracking-tight">
+          <h2 className="text-4xl sm:text-5xl  font-bold leading-tight tracking-tight">
             <span
               className="bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] 
                              bg-clip-text text-transparent"
@@ -59,21 +60,21 @@ export const FeaturesSection = () => {
           </h2>
         </div>
 
-        <p className="mt-6 text-sm sm:text-base md:text-lg m-auto  text-primary-color font-medium max-w-2xl leading-relaxed ">
+        <P className="mt-6 m-auto ">
           Descubre las características que distinguen nuestra propuesta y cómo
           pueden potenciar el crecimiento de tu organización
-        </p>
+        </P>
       </div>
 
       {/* Línea decorativa */}
-      <Separator />
+      <Separator className={"p-8"}/>
 
       {/* Grid de características */}
-      <div className="space-y-20 lg:space-y-5">
+      <div className=" md:space-y-5">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="opacity translate-y-8 animate-fade-in-up"
+            className="opacity animate-fade-in-up"
             style={{
               animationDelay: `${index * 200}ms`,
               animationFillMode: "forwards",
@@ -83,6 +84,7 @@ export const FeaturesSection = () => {
           </div>
         ))}
       </div>
+      <Separator className={"m-auto p-8"} />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Carousel } from "./Carousel";
 import { Button } from "../../../../components/button/Button";
 import { button } from "../../../../style/buttonPrincipal";
+import { Separator } from "../../../../components/separator/Separator";
 
 const ServicesSection = () => {
   const services = [
@@ -42,7 +43,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="relative py-10 px-2 xl:px-0 ">
+    <section className="relative px-2 xl:px-0 ">
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />
@@ -57,25 +58,32 @@ const ServicesSection = () => {
           <div className="">
             <div className="space-y-6 ">
               <div className="inline-block ">
-                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                  <span
-                    className="bg-gradient-to-r from-[#ff66c4] via-[#46d5e7] to-[#ff66c4] 
+              <h2 className="text-4xl sm:text-5xl  font-bold leading-tight tracking-tight">
+              <span
+              className="bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] 
                              bg-clip-text text-transparent"
-                  >
-                    Nuestros servicios
-                  </span>
+            >
+              Nuestros
+            </span>
+            <br></br>
+            <span
+              className="bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/75 to-[#46d5e7]/80 
+                             bg-clip-text text-transparent"
+            >
+              servicios
+            </span>
                 </h2>
               </div>
 
-              <p className=" text-sm sm:text-base md:text-lg text-slate-600 text-primary-color font-medium max-w-2xl leading-relaxed ">
+              <p className=" text-sm sm:text-base md:text-lg text-primary-color font-medium max-w-2xl leading-relaxed ">
                 Descubre las soluciones que distinguen nuestra propuesta y cómo
                 pueden potenciar el crecimiento de tu organización con
                 tecnología de vanguardia.
               </p>
 
               {/* Línea decorativa */}
-              <div className="flex justify-start ">
-                <div className="h-1 w-24 bg-gradient-to-r from-teal-500 to-amber-700 rounded-full" />
+              <div className="flex justify-start">
+              <Separator className={"p-0"}/>
               </div>
             </div>
 
@@ -100,11 +108,19 @@ const ServicesSection = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="py-10">
-              <Link className="relative z-10 text-white" to="/servicios">
-                <Button className={`${button.generalbutton} `}>
+            <div className="py-10 text-black">
+              <Link className="relative z-10 text-black" to="/servicios">
+                <Button className={`${button.generalbutton} 
+                        relative overflow-hidden
+                        group/btn
+                        transform transition-all duration-300 ease-out
+                        hover:scale-105 active:scale-95
+                        text-sm sm:text-base
+                        px-4 sm:px-6 md:px-8
+                        py-2 sm:py-3
+                        shadow-lg hover:shadow-xl`}>
                   Ver Todos los Servicios
-                  <ArrowRight className="w-4 h-4 text-white transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight className="w-4 h-4 ransition-transform duration-300 group-hover:translate-x-1" />
                   {/* Efecto de brillo */}
                   <div
                     className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/0 via-white/20 to-white/0 

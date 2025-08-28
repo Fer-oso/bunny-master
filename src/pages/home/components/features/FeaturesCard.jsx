@@ -1,4 +1,5 @@
 import { Button } from "../../../../components/button/Button";
+import { P } from "../../../../components/paragraph/P";
 import { button } from "../../../../style/buttonPrincipal";
 
 export const FeaturesCard = ({
@@ -14,15 +15,14 @@ export const FeaturesCard = ({
       className={`group relative overflow-hidden 
                     backdrop-blur-xl 
                     rounded-2xl sm:rounded-3xl
-                    
                     shadow-lg hover:shadow-2xl
                     transition-all duration-700 ease-out 
                     hover:-translate-y-3 hover:scale-[1.02]
                     grid grid-cols-1 lg:grid-cols-2 
                     gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16
-                    p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12
+                    p-2  lg:p-10 xl:p-12
                     items-center
-                   to-[#f5f9fc] dark:from-[#f5f9fc] dark:via-[#f1f5f9] dark:to-[#e2e8f0]
+                   from-[#f5f9fc] via-[#f1f5f9] to-[#e2e8f0] dark:from-[#f5f9fc] dark:via-[#f1f5f9] dark:to-[#e2e8f0]
                     ${
                       reverse
                         ? "lg:[&>*:first-child]:order-2 lg:[&>*:last-child]:order-1"
@@ -52,7 +52,7 @@ export const FeaturesCard = ({
       <div className="relative space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-7 xl:space-y-8 z-10">
         {/* Título responsive */}
         <h3
-          className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 
+          className="text-xl sm:text-2xl md:text-3xl 
                        font-bold text-black dark:text-black 
                        leading-tight tracking-tight
                        group-hover:text-black dark:group-hover:text-black/80
@@ -62,16 +62,9 @@ export const FeaturesCard = ({
         </h3>
 
         {/* Descripción responsive */}
-        <p
-          className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 
-                      text-primary-color dark:[ text-primary-color]
-                      leading-relaxed font-medium
-                      group-hover:text-primary-color dark:group-hover:text-primary-color
-                      transition-colors duration-500
-                      line-clamp-4 sm:line-clamp-none"
-        >
+        <P>
           {description}
-        </p>
+        </P>
 
         {/* Botón mejorado */}
         <div className="pt-2 sm:pt-4">
@@ -87,16 +80,16 @@ export const FeaturesCard = ({
                         shadow-lg hover:shadow-xl`}
           >
             {/* Fondo animado del botón */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300 " />
 
-            <span className="relative z-10 font-semibold">{buttonText}</span>
+            <span className="relative z-10 font-semibold text-black">{buttonText}</span>
 
             {/* Flecha con animación mejorada */}
             <svg
-              className="w-3 h-3 sm:w-4 sm:h-4 text-current 
+              className="w-3 h-3 sm:w-4 sm:h-4 
                          transition-all duration-300 ease-out
                          group-hover/btn:translate-x-1 group-hover/btn:scale-110
-                         relative z-10"
+                         relative z-10 text-black/80 "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
