@@ -10,7 +10,7 @@ export default function NavBar() {
   return (
     <nav className="px-2 xl:px-0 shadow-md top-0 text-xs fixed overflow-hidden z-40 w-full bg-white dark:bg-gray-100/40 backdrop-blur-2xl">
       <Container className="flex items-center justify-between ">
-        <Logo height="75px" />
+        <Logo height="60px" />
 
         {/* Botón hamburguesa (mobile) */}
         <button

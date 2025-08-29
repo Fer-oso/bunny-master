@@ -36,7 +36,7 @@ const ServicesSection = () => {
         "sistema de tickets para gestion de proyectos",
       image:
       "/img/servicios/sistematickets.png",
-      link: "https://sistema-turnos-bunny.netlify.app/",
+      link: "https://sistema-tickets-bunny.netlify.app/",
       category: "Analytics",
     },
  
