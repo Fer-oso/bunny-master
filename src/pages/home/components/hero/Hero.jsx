@@ -4,10 +4,6 @@ import { P } from "../../../../components/paragraph/P";
 import { H2 } from "../../../../components/titles/h2/H2";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 
-const span1 = "Transformamos ideas en";
-const span2 = "resultados digitales reales";
-
-
 const texts = [
   "Transformamos ideas en",
   "resultados digitales reales"
@@ -65,7 +61,7 @@ export const Hero = () => {
         <img
           src={bunnyImage}
           alt="Bunny Mascota"
-          className="w-72 md:w-[300px] lg:w-[400px] 2xl:w-[500px]"
+          className="w-72 md:w-[300px] lg:w-[400px] 2xl:w-[500px] animate-float-hero-logo"
         />
       </div>
     </div>

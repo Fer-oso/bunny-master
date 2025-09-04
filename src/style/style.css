@@ -91,3 +91,19 @@ body {
 .animate-float-slow {
   animation: float-slow 4s ease-in-out infinite 1s;
 }
+
+@keyframes float-hero-logo {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 015px);
+  }
+  100% {
+    transform: translate(0, -0´x);
+  }
+}
+
+.animate-float-hero-logo {
+  animation: float 1.5s ease-in-out infinite alternate;
+}

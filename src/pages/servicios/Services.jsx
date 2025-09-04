@@ -6,7 +6,7 @@ import { HeroSlider } from './components/HeroSlider';
 import { StatsSection } from './components/StatsSection';
 import { ServiceCard } from './components/ServiceCard';
 
-import { services } from '../../data/services';
+import { services } from '../../utils/data/services';
 
 export default function Services() {
   const [hoveredCard, setHoveredCard] = useState(null);

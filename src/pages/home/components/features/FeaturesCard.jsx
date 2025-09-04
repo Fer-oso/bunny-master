@@ -82,14 +82,14 @@ export const FeaturesCard = ({
             {/* Fondo animado del botón */}
             <div className="absolute inset-0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300 " />
 
-            <span className="relative z-10 font-semibold text-black">{buttonText}</span>
+            <span className="relative z-10 font-semibold text-gray-600 dark:text-gray-600">{buttonText}</span>
 
             {/* Flecha con animación mejorada */}
             <svg
               className="w-3 h-3 sm:w-4 sm:h-4 
                          transition-all duration-300 ease-out
                          group-hover/btn:translate-x-1 group-hover/btn:scale-110
-                         relative z-10 text-black/80 "
+                         relative z-10 text-gray-600 dark:text-gray-600 "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

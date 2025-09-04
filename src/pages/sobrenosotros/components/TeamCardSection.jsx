@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { team } from "../../../data/team";
+
 import { TeamCard } from "./TeamCard";
 import { TeamModal } from "./TeamModal";
+import { team } from "../../../utils/data/team";
 
 export default function TeamCardSection(){
 

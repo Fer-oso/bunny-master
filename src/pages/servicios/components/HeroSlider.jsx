@@ -5,7 +5,7 @@ import {
     Play,
     Pause
   } from 'lucide-react';
-import { heroSlides } from "../../../data/heroSlides";
+import { heroSlides } from "../../../utils//data/heroSlides";
 
 
 export const HeroSlider = () => {

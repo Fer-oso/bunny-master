@@ -10,6 +10,13 @@ import {
   Heart
 } from 'lucide-react';
 import { Container } from '../../routes/layout/Container';
+import { Link } from 'react-router-dom';
+
+const links = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Servicios', href: 'servicios' },
+  { label: 'Sobre nosotros', href: 'nosotros' },
+]
 
 export const Footer = () => {
 
@@ -60,14 +67,14 @@ export const Footer = () => {
                   <div className="p-2 bg-slate-800/50 rounded-lg">
                     <Phone className="w-5 h-5" />
                   </div>
-                  <span>+1 (555) 123-4567</span>
+                  <span>351 200-8632</span>
                 </div>
                 
                 <div className="flex items-center gap-3 text-slate-300 hover:text-teal-400 transition-colors duration-300">
                   <div className="p-2 bg-slate-800/50 rounded-lg">
                     <MapPin className="w-5 h-5" />
                   </div>
-                  <span>123 Calle Principal, Ciudad, País</span>
+                  <span>Cordoba, AR</span>
                 </div>
               </div>
             </div>
@@ -76,15 +83,15 @@ export const Footer = () => {
             <div className="space-y-6">
               <h4 className="text-xl font-semibold text-white">Enlaces Rápidos</h4>
               <ul className="space-y-3">
-                {['Inicio', 'Servicios', 'Características', 'Proyectos', 'Contacto'].map((link) => (
-                  <li key={link}>
-                    <a 
-                      href="#" 
+                {links.map(({ label, href }) => (
+                  <li key={label}>
+                    <Link 
+                      to={href}
                       className="text-slate-300 hover:text-teal-400 transition-colors duration-300 
                                hover:translate-x-1 transform inline-block"
                     >
-                      {link}
-                    </a>
+                      {label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -102,13 +109,12 @@ export const Footer = () => {
                   'Soporte Técnico'
                 ].map((service) => (
                   <li key={service}>
-                    <a 
-                      href="#" 
+                    <span 
                       className="text-slate-300 hover:text-teal-400 transition-colors duration-300 
-                               hover:translate-x-1 transform inline-block"
+                               hover:translate-x-1 transform inline-block cursor-default"
                     >
                       {service}
-                    </a>
+                    </span>
                   </li>
                 ))}
               </ul>

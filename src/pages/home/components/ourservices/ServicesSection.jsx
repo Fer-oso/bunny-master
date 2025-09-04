@@ -6,6 +6,7 @@ import { Carousel } from "./Carousel";
 import { Button } from "../../../../components/button/Button";
 import { button } from "../../../../style/buttonPrincipal";
 import { Separator } from "../../../../components/separator/Separator";
+import { BackgroundDecoration } from "../../../../components/background/BackgroundDecoration";
 
 const ServicesSection = () => {
   const services = [
@@ -45,11 +46,7 @@ const ServicesSection = () => {
   return (
     <section className="relative px-2 xl:px-0 ">
       {/* Elementos decorativos de fondo */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 right-0 w-64 h-64 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
-      </div>
+      <BackgroundDecoration/>
 
       <div className="relative w-full ">
         {/* Layout principal: texto izquierda, slider derecha */}
@@ -82,9 +79,7 @@ const ServicesSection = () => {
               </p>
 
               {/* Línea decorativa */}
-              <div className="flex justify-start">
-              <Separator className={"p-0"}/>
-              </div>
+              <Separator className={"p-0 flex justify-start"}/>
             </div>
 
             {/* Estadísticas */}
