@@ -66,7 +66,7 @@ export default function SobreNosotros() {
 
         <P>
         Nos une el entusiasmo por crear, desarrollar y acompañar marcas en el
-          mundo digital. Contamos con programadores, diseñadores gráficos y una
+          mundo digital. Contamos con programadores, diseñadores gráficos y
           community manager, lo que nos permite ofrecer soluciones completas:
           desde el desarrollo de páginas web hasta la creación de contenido
           visual y estrategias para redes sociales.
@@ -95,7 +95,7 @@ export default function SobreNosotros() {
               </h2>
       </div>
       <P className="text-center text-xl mb-10 max-w-xl mx-auto ">
-        Nuestro equipo está conformado por programadores, diseñadores y una
+        Nuestro equipo está conformado por programadores, diseñadores y
         community manager, que combinan sus talentos para dar vida a cada
         proyecto.
       </P>

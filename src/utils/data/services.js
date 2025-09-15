@@ -10,7 +10,7 @@ export const services = [
       features: ["Diseño Responsivo", "Optimización SEO", "Carga Rápida", "Seguridad SSL"],
       price: "Desde $850",
       popular: false,
-      gradient: "from-blue-500 to-cyan-500",
+      gradient: "from-[#46d5e7] to-[#ffb8b8]",
       bgGradient: "from-blue-50 to-cyan-50",
       hoverGradient: "from-blue-500/10 to-cyan-500/10"
     },
