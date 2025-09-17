@@ -80,13 +80,13 @@ export default function SobreNosotros() {
     </div>
 
     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-          <img src={bunnyImage} alt="Bunny Mascot" className="w-72 md:w-[300px] lg:w-[400px] 2xl:w-[500px]"/>
+          <img src={bunnyImage} alt="Bunny Mascot" className="w-72 md:w-[300px] lg:w-[400px] 2xl:w-[500px] animate-float-pet"/>
         </div>
       </div>
 
 
       {/* Sección equipo */}
- <div className="text-center text-3xl font-bold mb-4 rounded">
+ <div className="text-center text-3xl font-bold mb-4 rounded ">
  <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#46d5e7]/80
                              bg-clip-text text-transparent">

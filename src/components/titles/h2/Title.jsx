@@ -1,4 +1,4 @@
-export const H2 = ({ children, className }) => {
+export const Title = ({ children, className }) => {
   return (
     <h2
       className={`font-bold leading-tight tracking-tight ${className}`}

@@ -7,6 +7,7 @@ import { Button } from "../../../../components/button/Button";
 import { button } from "../../../../style/buttonPrincipal";
 import { Separator } from "../../../../components/separator/Separator";
 import { BackgroundDecoration } from "../../../../components/background/BackgroundDecoration";
+import { Container } from "../../../../routes/layout/Container";
 
 const ServicesSection = () => {
   const services = [
@@ -44,18 +45,18 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="relative px-2 xl:px-0 ">
+    <Container className=" relative">
       {/* Elementos decorativos de fondo */}
       <BackgroundDecoration/>
 
-      <div className="relative w-full ">
+      <div className=" w-full ">
         {/* Layout principal: texto izquierda, slider derecha */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-20 items-center">
           {/* Contenido de texto - Lado izquierdo */}
           <div className="">
             <div className="space-y-6 ">
               <div className="inline-block ">
-              <h2 className="text-4xl sm:text-5xl  font-bold leading-tight tracking-tight">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl leading-tight font-bold">
               <span
               className="bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] 
                              bg-clip-text text-transparent"
@@ -79,7 +80,7 @@ const ServicesSection = () => {
               </p>
 
               {/* Línea decorativa */}
-              <Separator className={"p-0 flex justify-start"}/>
+              <Separator className={"p-0 flex justify-center lg:justify-start "}/>
             </div>
 
             {/* Estadísticas */}
@@ -131,7 +132,7 @@ const ServicesSection = () => {
           <Carousel services={services} />
         </div>
       </div>
-    </section>
+    </Container>
   );
 };
 

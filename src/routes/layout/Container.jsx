@@ -2,12 +2,7 @@ export const Container = ({children,className}) =>{
 
     return (
         <div className={ 
-        `m-auto
-        sm:max-w-screen-sm
-        md:max-w-screen-md
-        lg:max-w-screen-lg
-        xl:max-w-screen-xl
-        2xl:max-w-screen-2xl ${className}`}
+        `${className} relative bg-gradient-to-br flex items-center text-center justify-between px-4 lg:px-8 py-12 `}
         >
         {children}
         </div>

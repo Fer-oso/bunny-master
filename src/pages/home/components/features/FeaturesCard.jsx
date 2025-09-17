@@ -62,10 +62,11 @@ export const FeaturesCard = ({
         </h3>
 
         {/* Descripción responsive */}
+        <div className="w-full md:w-5/7 text-lg space-y-4 m-auto">
         <P>
           {description}
         </P>
-
+</div>
         {/* Botón mejorado */}
         <div className="pt-2 sm:pt-4">
           <Button
@@ -82,14 +83,14 @@ export const FeaturesCard = ({
             {/* Fondo animado del botón */}
             <div className="absolute inset-0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300 " />
 
-            <span className="relative z-10 font-semibold text-gray-600 dark:text-gray-600">{buttonText}</span>
+            <span className="relative z-10 font-semibold ">{buttonText}</span>
 
             {/* Flecha con animación mejorada */}
             <svg
               className="w-3 h-3 sm:w-4 sm:h-4 
                          transition-all duration-300 ease-out
                          group-hover/btn:translate-x-1 group-hover/btn:scale-110
-                         relative z-10 text-gray-600 dark:text-gray-600 "
+                         relative z-10 "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

@@ -2,6 +2,7 @@ import { Star, Zap, Shield } from "lucide-react";
 import { FeaturesCard } from "./FeaturesCard";
 import { Separator } from "../../../../components/separator/Separator";
 import { P } from "../../../../components/paragraph/P";
+import { Container } from "../../../../routes/layout/Container";
 
 export const FeaturesSection = () => {
   const features = [
@@ -39,11 +40,11 @@ export const FeaturesSection = () => {
   ];
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden lg:py-0">
+    <Container className={"flex-col min-h-screen "}>
       {/* Header de la sección */}
-      <div className="text-center  lg:mb-0 space-y-1 px-2 md:px-0  ">
+      <div className="lg:mb-0 space-y-1 px-2 md:px-0  ">
         <div className="inline-block">
-          <h2 className="text-4xl sm:text-5xl  font-bold leading-tight tracking-tight">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl leading-tight font-bold">
             <span
               className="bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] 
                              bg-clip-text text-transparent"
@@ -60,7 +61,7 @@ export const FeaturesSection = () => {
           </h2>
         </div>
 
-        <P className="mt-6 m-auto ">
+        <P className="mt-6 mx-auto ">
           Descubre las características que distinguen nuestra propuesta y cómo
           pueden potenciar el crecimiento de tu organización
         </P>
@@ -85,6 +86,6 @@ export const FeaturesSection = () => {
         ))}
       </div>
       <Separator className={"m-auto p-8"} />
-    </div>
+    </Container>
   );
 };

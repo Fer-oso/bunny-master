@@ -104,6 +104,6 @@ body {
   }
 }
 
-.animate-float-hero-logo {
+.animate-float-pet {
   animation: float 1.5s ease-in-out infinite alternate;
 }

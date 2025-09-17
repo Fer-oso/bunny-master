@@ -25,8 +25,9 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="px-2 xl:px-0 shadow-md top-0  overflow-hidden z-20 w-full  bg-gradient-to-br from-black via-black-800 to-slate-900 backdrop-blur-2xl">
-      <Container>
+    <footer className="px-4 lg:px-8 shadow-md top-0 flex flex-col items-center-safe overflow-hidden z-20 w-full  bg-gradient-to-br from-black via-black-800 to-slate-900 backdrop-blur-2xl">
+     
+      <div className='px-4 lg:px-8 py-12  text-center'>
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl" />
@@ -41,7 +42,7 @@ export const Footer = () => {
             
             {/* Columna 1: Información de la empresa */}
             <div className="lg:col-span-2 space-y-6">
-              <div>
+            <div className="flex flex-col justify-center items-start text-left">
                 <h3 className="text-2xl lg:text-3xl font-bold mb-4">
                   <span className="color-primary-color bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] 
                              bg-clip-text text-transparent">
@@ -60,7 +61,7 @@ export const Footer = () => {
                   <div className="p-2 bg-slate-800/50 rounded-lg">
                     <Mail className="w-5 h-5" />
                   </div>
-                  <span>contacto@tuempresa.com</span>
+                  <span>equipobunny@gmail.com</span>
                 </div>
                 
                 <div className="flex items-center gap-3 text-slate-300 hover:text-teal-400 transition-colors duration-300">
@@ -205,7 +206,7 @@ export const Footer = () => {
         </div>
         
       </div>
-      </Container>
+      </div>
     </footer>
   );
 };

@@ -46,14 +46,14 @@ export const team = [
         },
         {
           name: "Lucas valentin Rivas",
-          role: "Head of Design",
+          role: "Developer",
           imageSrc: "/img/perfil/lucas-perfil.jpg",
           linkedinUrl: "https://www.linkedin.com/in/lucas-valentin-rivas",
           email: "lucasrivastrabajo@gmail.com",
           phone: "+3865210198",
           location: "Tucuman, Argentina",
-          bio: "Diseñadora UX/UI con un enfoque centrado en el usuario y pasión por crear experiencias digitales memorables. Especialista en design systems y metodologías ágiles.",
-          skills: ["UX/UI", "Design Systems", "Desarrollador backend"],
+          bio: "Programador web con enfoque  en desarrollo de software y en mantener sistemas informáticos, tanto de hardware como de software. Mi objetivo es asegurarme de que todo funcione de manera eficiente, confiable y segura",
+          skills: ["Javascript", "React", "NodeJS"],
           achievements: [
           
           ],

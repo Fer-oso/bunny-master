@@ -2,15 +2,19 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // o cualquier ícono similar
 import { Logo } from "../logo/Logo";
-import { Container } from "../../routes/layout/Container";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="px-2 xl:px-0 shadow-md top-0 text-xs fixed overflow-hidden z-40 w-full bg-white dark:bg-gray-100/40 backdrop-blur-2xl">
-      <Container className="flex items-center justify-between ">
-        <Logo height="60px" />
+      <div className="flex items-center justify-between m-auto
+        sm:max-w-screen-sm
+        md:max-w-screen-md
+        lg:max-w-screen-lg
+        xl:max-w-screen-xl
+        2xl:max-w-screen-2xl ">
+        <Link to={"/"}><Logo height="60px" /></Link>
 
         {/* Botón hamburguesa (mobile) */}
         <button
@@ -48,7 +52,7 @@ export default function NavBar() {
             </a>
           </li>
         </ul>
-      </Container>
+      </div>
 
       {/* Menú desplegable (mobile) */}
       {isOpen && (
