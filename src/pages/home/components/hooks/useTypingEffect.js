@@ -10,7 +10,7 @@ import { useState, useEffect, useCallback } from "react";
  * @param {number} options.pauseBeforeRestart Pausa antes de reiniciar el ciclo (ms)
  * @param {number} options.randomVariation Variación aleatoria en velocidad (ms)
  */
-export const useTypingEffect = (texts = [], options = {}) => {
+export const useTypingEffect = (texts = {}, options = {}) => {
   const {
     typingSpeed = 80,
     eraseSpeed = 50,
@@ -57,7 +57,7 @@ export const useTypingEffect = (texts = [], options = {}) => {
     let isCurrentlyErasing = false;
 
     const tick = () => {
-      const currentText = texts[currentIndex];
+      const currentText = texts[currentIndex].text;
 
       if (!isCurrentlyErasing) {
         // Modo escritura
@@ -87,7 +87,7 @@ export const useTypingEffect = (texts = [], options = {}) => {
         timeout = setTimeout(tick, randomDelay(typingSpeed));
       } else {
         // Modo borrado (desde el último hacia el primero)
-        const textToErase = texts[currentIndex];
+        const textToErase = texts[currentIndex].text;
         
         if (charIndex > 0) {
           charIndex--;
@@ -101,7 +101,7 @@ export const useTypingEffect = (texts = [], options = {}) => {
           if (currentIndex > 0) {
             // Pasar al texto anterior
             currentIndex--;
-            charIndex = texts[currentIndex].length;
+            charIndex = texts[currentIndex].text.length;
             timeout = setTimeout(tick, randomDelay(eraseSpeed));
           } else {
             // Terminó de borrar todo, reiniciar
