@@ -12,7 +12,7 @@ export default function Services() {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-10 md:mt-17">
       {/* Hero Slider Section */}
       <HeroSlider />
 

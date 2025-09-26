@@ -36,9 +36,9 @@ export default function SobreNosotros() {
       </div>
 
       {/* Hero */}
-      <section className="mx-auto flex flex-col lg:flex-row items-center justify-between min-h-screen px-4 md:px-8 py-10">
+      <section className="mx-auto flex flex-col lg:flex-row items-center justify-between min-h-screen px-4 md:px-8 mt-10">
         {/* Texto principal */}
-        <div className="w-full lg:w-3/4 flex flex-col justify-center items-start text-left space-y-6">
+        <div className="w-full lg:w-3/4 flex flex-col justify-center items-start text-left space-y-2">
           <div className="flex items-center space-x-2 text-xs sm:text-base md:text-lg lg:text-xl text-primary">
             <span
               aria-hidden="true"
@@ -64,7 +64,7 @@ export default function SobreNosotros() {
             ))}
           </h1>
 
-          <div className="w-full md:w-5/6 space-y-4">
+          <div className="w-full md:w-5/6 space-y-4 ">
             <P>
               En <strong>Bunny Creation World</strong> somos un equipo creativo y
               multidisciplinario formado por estudiantes de Ingeniería en Sistemas

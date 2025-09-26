@@ -45,7 +45,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <Container className=" relative">
+    <Container className="relative">
       {/* Elementos decorativos de fondo */}
       <BackgroundDecoration/>
 

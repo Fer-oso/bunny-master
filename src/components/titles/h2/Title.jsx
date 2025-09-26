@@ -1,9 +1,9 @@
 export const Title = ({ children, className }) => {
   return (
-    <h2
+    <h1
       className={`font-bold leading-tight tracking-tight ${className}`}
     >
       {children}
-    </h2>
+    </h1>
   );
 };

@@ -66,14 +66,14 @@ export const HeroSlider = () => {
         {/* Slide Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-8 top-1/2 transform -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm p-4 rounded-full 3hover:bg-white/30 transition-all duration-300 text-gray-700 hover:text-gray-900 group "
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30 bg-white/20 md:backdrop-blur-sm p-4 rounded-full hover:bg-white/30 transition-all duration-300 text-gray-700 hover:text-gray-900 group "
         >
           <ChevronLeft size={24} className="group-hover:-translate-x-1 transition-transform duration-300" />
         </button>
   
         <button
           onClick={nextSlide}
-          className="absolute right-8 top-1/2 transform -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm p-4 rounded-full hover:bg-white/30 transition-all duration-300 text-gray-700 hover:text-gray-900 group"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30 bg-white/20 md:backdrop-blur-sm p-4 rounded-full hover:bg-white/30 transition-all duration-300 text-gray-700 hover:text-gray-900 group"
         >
           <ChevronRight size={24} className="group-hover:translate-x-1 transition-transform duration-300" />
         </button>
