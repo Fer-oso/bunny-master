@@ -22,8 +22,6 @@ export const useTypingEffect = (texts = {}, options = {}) => {
   // Estados para cada texto
   const [displays, setDisplays] = useState(texts.map(() => ""));
   const [activeStates, setActiveStates] = useState(texts.map(() => false));
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [isErasing, setIsErasing] = useState(false);
 
   // Función para agregar variación aleatoria
   const randomDelay = useCallback((base) => {

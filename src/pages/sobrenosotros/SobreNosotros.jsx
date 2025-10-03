@@ -1,49 +1,42 @@
 import TeamCardSection from "./components/TeamCardSection";
 import { useTypingEffect } from "../home/components/hooks/useTypingEffect";
 import { P } from "../../components/paragraph/P";
+import { BackgroundDecoration } from "../../components/background/BackgroundDecoration";
 
 // Textos con sus colores asociados
 const texts = [
   {
     text: "Sobre",
-    color: "bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] bg-clip-text text-transparent"
+    color:
+      "bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] bg-clip-text text-transparent",
   },
   {
     text: "Nosotros",
-    color: "bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/80 to-[#46d5e7]/80 bg-clip-text text-transparent"
-  }
+    color:
+      "bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/80 to-[#46d5e7]/80 bg-clip-text text-transparent",
+  },
 ];
 
 export default function SobreNosotros() {
-  const { displays, activeStates } = useTypingEffect(
-    texts,
-    {
-      typingSpeed: 80,
-      eraseSpeed: 50,
-      pauseBeforeErase: 500,
-      pauseBeforeRestart: 200,
-      randomVariation: 50
-    }
-  );
+  const { displays, activeStates } = useTypingEffect(texts, {
+    typingSpeed: 80,
+    eraseSpeed: 50,
+    pauseBeforeErase: 500,
+    pauseBeforeRestart: 200,
+    randomVariation: 50,
+  });
 
   return (
     <>
       {/* Fondos decorativos */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 right-0 w-64 h-32 bg-purple-200/15 rounded-full blur-3xl transform translate-x-1/2" />
-      </div>
+      <BackgroundDecoration/>
 
       {/* Hero */}
-      <section className="mx-auto flex flex-col lg:flex-row items-center justify-between min-h-screen px-4 md:px-8 mt-10">
+      <section className="mx-auto flex flex-col lg:flex-row items-center justify-between md:min-h-screen px-4 md:px-8 mt-20 md:mt-0">
         {/* Texto principal */}
         <div className="w-full lg:w-3/4 flex flex-col justify-center items-start text-left space-y-2">
           <div className="flex items-center space-x-2 text-xs sm:text-base md:text-lg lg:text-xl text-primary">
-            <span
-              aria-hidden="true"
-              className="fi fi-rs-display-code"
-            />
+            <span aria-hidden="true" className="fi fi-rs-display-code" />
             <strong className="uppercase tracking-wide font-semibold">
               Bunny creations world
             </strong>
@@ -66,28 +59,24 @@ export default function SobreNosotros() {
 
           <div className="w-full md:w-5/6 space-y-4 ">
             <P>
-              En <strong>Bunny Creation World</strong> somos un equipo creativo y
-              multidisciplinario formado por estudiantes de Ingeniería en Sistemas
-              con pasión por la tecnología, el diseño y la comunicación digital.
-            </P>
+              En <strong>Bunny Creation World </strong>somos un equipo creativo de estudiantes de
+              Ingeniería en Sistemas apasionados por la tecnología, el diseño y
+              la comunicación digital.
+              </P>
 
-            <P>
-              Nos une el entusiasmo por crear, desarrollar y acompañar marcas en el
-              mundo digital. Contamos con programadores, diseñadores gráficos y
-              community manager, lo que nos permite ofrecer soluciones completas:
-              desde el desarrollo de páginas web hasta la creación de contenido
-              visual y estrategias para redes sociales.
-            </P>
+              <P>Nos especializamos en dar vida a marcas
+              en el mundo online con un enfoque integral: desarrollo web, diseño
+              gráfico y gestión de redes sociales. Creemos en el trabajo
+              colaborativo, el aprendizaje constante y en el poder de las ideas
+              bien ejecutadas.</P>
+        
 
-            <P>
-              Creemos en el trabajo colaborativo, el aprendizaje constante y en el
-              poder de las ideas bien ejecutadas.
-            </P>
+           
           </div>
         </div>
 
         {/* Imagen */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-10">
           <img
             src="/img/bunnymascota/bunny-mascota-computadora.png"
             alt="Bunny Mascot"
@@ -105,14 +94,11 @@ export default function SobreNosotros() {
           </span>
         </h2>
 
-       
         <P className={"w-full md:w-5/6 text-lg space-y-4 m-auto my-10"}>
           Nuestro equipo está conformado por programadores, diseñadores y
           community manager, que combinan sus talentos para dar vida a cada
           proyecto.
         </P>
-       
-        
 
         <TeamCardSection />
       </section>
