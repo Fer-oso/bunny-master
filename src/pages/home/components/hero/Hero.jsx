@@ -2,7 +2,6 @@ import bunnyImage from "/img/bunnymascota/bunny-mascota.png";
 
 import { P } from "../../../../components/paragraph/P";
 import { Title } from "../../../../components/titles/h2/Title";
-import { useTypingEffect } from "../hooks/useTypingEffect";
 import { Container } from "../../../../routes/layout/Container";
 import { heroTitles } from "../../../../utils/titles/Titles";
 

@@ -2,14 +2,7 @@ import { Button } from "../../../../components/button/Button";
 import { P } from "../../../../components/paragraph/P";
 import { button } from "../../../../style/buttonPrincipal";
 
-export const FeaturesCard = ({
-  title,
-  description,
-  urlImage,
-  buttonText,
-  reverse = false,
-  gradientClass,
-}) => {
+export const FeaturesCard = ({feature,openModal}) => {
   return (
     <div
       className={`group relative overflow-hidden 
@@ -24,7 +17,7 @@ export const FeaturesCard = ({
                     items-center
                    from-[#f5f9fc] via-[#f1f5f9] to-[#e2e8f0] dark:from-[#f5f9fc] dark:via-[#f1f5f9] dark:to-[#e2e8f0]
                     ${
-                      reverse
+                      feature.reverse
                         ? "lg:[&>*:first-child]:order-2 lg:[&>*:last-child]:order-1"
                         : ""
                     }`}
@@ -58,13 +51,13 @@ export const FeaturesCard = ({
                        group-hover:text-black dark:group-hover:text-black/80
                        transition-colors duration-500"
         >
-          {title}
+          { feature.title}
         </h3>
 
         {/* Descripción responsive */}
         <div className="w-full md:w-5/7 text-lg space-y-4 m-auto">
         <P>
-          {description}
+          { feature.description}
         </P>
 </div>
         {/* Botón mejorado */}
@@ -79,18 +72,15 @@ export const FeaturesCard = ({
                         px-4 sm:px-6 md:px-8
                         py-2 sm:py-3
                         shadow-lg hover:shadow-xl`}
+          onClick={()=>openModal(feature)}
           >
             {/* Fondo animado del botón */}
             <div className="absolute inset-0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300 " />
 
-            <span className="relative z-10 font-semibold ">{buttonText}</span>
-
+            <span className="relative z-10 font-semibold ">{ feature.buttonText}</span>
             {/* Flecha con animación mejorada */}
             <svg
-              className="w-3 h-3 sm:w-4 sm:h-4 
-                         transition-all duration-300 ease-out
-                         group-hover/btn:translate-x-1 group-hover/btn:scale-110
-                         relative z-10 "
+              className="w-3 h-3 sm:w-4 sm:h-4 transition-all duration-300 ease-out group-hover/btn:translate-x-1 group-hover btn:scale-110 relative z-10 "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -115,7 +105,7 @@ export const FeaturesCard = ({
       <div className="relative z-10 order-first lg:order-none">
         <div
           className={`relative aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3] 
-                        rounded-xl sm:rounded-2xl overflow-hidden ${gradientClass}
+                        rounded-xl sm:rounded-2xl overflow-hidden ${ feature.gradientClass}
                         shadow-xl group-hover:shadow-2xl
                         transform transition-all duration-700 ease-out
                         group-hover:scale-105 group-hover:-rotate-1
@@ -123,11 +113,11 @@ export const FeaturesCard = ({
         >
           {/* Imagen principal */}
           <img
-            src={urlImage}
+            src={ feature.urlImage}
             className="w-full h-full object-cover 
                        transition-all duration-700 ease-out
                        group-hover:scale-110 group-hover:brightness-110"
-            alt={title}
+            alt={ feature.title}
             loading="lazy"
           />
 

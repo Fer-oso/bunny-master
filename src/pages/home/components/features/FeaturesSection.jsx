@@ -3,6 +3,8 @@ import { FeaturesCard } from "./FeaturesCard";
 import { Separator } from "../../../../components/separator/Separator";
 import { P } from "../../../../components/paragraph/P";
 import { Container } from "../../../../routes/layout/Container";
+import { useState } from "react";
+import { FeaturesModalInformation } from "./FeaturesModalInformation";
 
 export const FeaturesSection = () => {
   const features = [
@@ -38,6 +40,19 @@ export const FeaturesSection = () => {
       gradientClass: "bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-700",
     },
   ];
+
+  const [selectedFeature, setSelectedFeature] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (feature) => {
+    setSelectedFeature(feature);
+    setIsModalOpen(true);
+  };
+  
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedFeature(null), 200);
+  };
 
   return (
     <Container className={"flex-col min-h-screen "}>
@@ -81,11 +96,14 @@ export const FeaturesSection = () => {
               animationFillMode: "forwards",
             }}
           >
-            <FeaturesCard {...feature} />
+            <FeaturesCard feature={feature} openModal={openModal} />
           </div>
         ))}
       </div>
+
+    
       <Separator className={"m-auto p-8"} />
+      <FeaturesModalInformation feature={selectedFeature} isOpen={isModalOpen} onClose={closeModal}/>
     </Container>
   );
 };
