@@ -85,7 +85,7 @@ export const FeaturesModalInformation = ({ feature, isOpen, onClose }) => {
 
   return (
 <div
-  className={`fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50 backdrop-blur-sm transition-opacity  duration-200 ${
+  className={`fixed inset-0 z-50 flex items-center justify-center p-4  bg-opacity-50 backdrop-blur-sm transition-opacity  duration-200 ${
     isClosing ? "opacity-0 backdrop-blur-0" : "opacity-100 backdrop-blur-sm"
   }`}
   onClick={handleBackgroundClick}
@@ -97,7 +97,7 @@ export const FeaturesModalInformation = ({ feature, isOpen, onClose }) => {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className={`${feature.gradientClass} p-8 text-white relative`}>
+        <div className={`${feature.headerColor} p-8 text-black relative`}>
           <button
             onClick={onClose}
             className="absolute top-4 right-4 p-2 hover:bg-white hover:bg-opacity-20 rounded-lg transition-colors"
@@ -110,7 +110,7 @@ export const FeaturesModalInformation = ({ feature, isOpen, onClose }) => {
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold">{feature.title}</h2>
-              <p className="text-white text-opacity-90 mt-1">{content.subtitle}</p>
+              <p className="text-black text-opacity-90 mt-1">{content.subtitle}</p>
             </div>
           </div>
         </div>
@@ -126,8 +126,8 @@ export const FeaturesModalInformation = ({ feature, isOpen, onClose }) => {
                   key={index}
                   className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                 >
-                  <div className={`${feature.gradientClass} p-1 rounded-full mt-0.5`}>
-                    <Check className="w-4 h-4 text-white" />
+                  <div className={`${feature.informativeColor} p-1 rounded-full mt-0.5`}>
+                    <Check className="w-4 h-4 " />
                   </div>
                   <span className="text-gray-700 flex-1">{benefit}</span>
                 </div>
@@ -146,7 +146,7 @@ export const FeaturesModalInformation = ({ feature, isOpen, onClose }) => {
                 >
                   <div className="flex items-center gap-2 mb-2">
                     <span
-                      className={`${feature.gradientClass} text-white font-bold px-3 py-1 rounded-full text-sm`}
+                      className={`${feature.informativeColor}  font-bold px-3 py-1 rounded-full text-sm`}
                     >
                       {index + 1}
                     </span>
@@ -161,7 +161,7 @@ export const FeaturesModalInformation = ({ feature, isOpen, onClose }) => {
           {/* CTA */}
           <div className="pt-6 border-t-2 border-gray-200">
             <button
-              className={`w-full ${feature.gradientClass} text-white font-bold py-4 rounded-xl hover:scale-[1.02] transition-transform shadow-lg`}
+              className={`w-full ${feature.informativeColor} text-white font-bold py-4 rounded-xl hover:scale-[1.02] transition-transform shadow-lg`}
             >
               Solicitar consulta gratuita
             </button>

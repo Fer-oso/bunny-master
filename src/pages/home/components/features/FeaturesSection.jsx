@@ -16,8 +16,8 @@ export const FeaturesSection = () => {
       urlImage: "./img/servicios/1.jpg",
       buttonText: "Explorar más",
       reverse: false,
-      gradientClass:
-        "bg-gradient-to-br from-violet-500 via-purple-600 to-indigo-700",
+      headerColor:"bg-gradient-to-r from-[#ffb8b8]/50 via-[#ffb8b8]/50 to-[#ffb8b8]/50",
+      informativeColor: "bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8]",
     },
     {
       title: "Optimización Avanzada",
@@ -27,7 +27,8 @@ export const FeaturesSection = () => {
       urlImage: "./img/servicios/2.jpg",
       buttonText: "Ver detalles",
       reverse: true,
-      gradientClass: "bg-gradient-to-br from-pink-500 via-rose-600 to-red-700",
+      headerColor: "bg-gradient-to-br from-[#46d5e7]/70 via-[#46d5e7]/70 to-[#46d5e7]/70",
+      informativeColor: "bg-gradient-to-r from-[#46d5e7] via-[#46d5e7] to-[#46d5e7]",
     },
     {
       title: "Confianza Total",
@@ -37,7 +38,8 @@ export const FeaturesSection = () => {
       urlImage: "./img/servicios/3.jpg",
       buttonText: "Conocer más",
       reverse: false,
-      gradientClass: "bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-700",
+      headerColor:"bg-gradient-to-r from-[#ffb8b8]/50 via-[#ffb8b8]/50 to-[#ffb8b8]/50",
+      informativeColor: "bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8]",
     },
   ];
 
@@ -68,7 +70,7 @@ export const FeaturesSection = () => {
             </span>
             <br></br>
             <span
-              className="bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/75 to-[#46d5e7]/80 
+              className="bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/80 to-[#46d5e7]/80 
                              bg-clip-text text-transparent"
             >
               Características
