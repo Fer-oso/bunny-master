@@ -1,4 +1,4 @@
-import { Container } from "./Container"
+
 
 export const GeneralContainer = ({ children, className }) => {
     return (
@@ -7,7 +7,10 @@ export const GeneralContainer = ({ children, className }) => {
         md:max-w-screen-md
         lg:max-w-screen-lg
         xl:max-w-screen-xl
-        2xl:max-w-screen-2xl ${className}`}>
+        2xl:max-w-screen-2xl
+        mx-auto px-2 sm:px-6 
+        lg:px-0
+        ${className}`}>
             {children}
         </div>
        

@@ -5,79 +5,104 @@ body {
   background-image: linear-gradient(to bottom right, #f8fafc, #f1f5f9, #e2e8f0);
 }
 
-.p{
+.p {
   color: #955c52;
 }
-  .bg-primary-color {
-    background-color: #46d5e7;
-  }
-  
-  .primary-color{
-    color: #46d5e7;
-  }
-  .secund-color{
-    color:#ffb8b8
-  }
 
-  .text-primary-color{
-    color: #955c52;
-  }
+.bgcolor {
+  background-image: linear-gradient(to bottom right, #f8fafc, #f1f5f9, #e2e8f0);
+}
 
-  .text-secund-color{
-    color:#ff66c4
-  }
-  
-  .conteiner-section{
+.bg-primary-color {
+  background-color: #46d5e7;
+}
+
+.primary-color {
+  color: #46d5e7;
+}
+
+.secund-color {
+  color: #ffb8b8
+}
+
+.text-primary-color {
+  color: #955c52;
+}
+
+.text-secund-color {
+  color: #ff66c4
+}
+
+.conteiner-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  }
+}
 
 
-  .section{
-    display: flex;
-    height: 430px;
-    justify-content: center;
-  }
+.section {
+  display: flex;
+  height: 430px;
+  justify-content: center;
+}
 
-  .a .section-img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-  }
+.a .section-img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
 
-  .section-img:hover{
-    cursor: crosshair;
-    width: 300px; 
-    opacity: 1;
-    filter: contrast(120%);
-    
-  }
+.section-img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
 
-  .bunny-color:hover {
-    color: #eeb6b5; /* Color de fondo al pasar el ratón */
-  }
+}
 
-
-
+.bunny-color:hover {
+  color: #eeb6b5;
+  /* Color de fondo al pasar el ratón */
+}
 
 /*  Agregar estas animaciones personalizadas al CSS global o Tailwind config */
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes float-delay {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @keyframes float-slow {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-6px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 .animate-float {
@@ -96,9 +121,11 @@ body {
   0% {
     transform: translate(0, 0px);
   }
+
   50% {
     transform: translate(0, 015px);
   }
+
   100% {
     transform: translate(0, -0´x);
   }
@@ -107,3 +134,5 @@ body {
 .animate-float-pet {
   animation: float 1.5s ease-in-out infinite alternate;
 }
+
+

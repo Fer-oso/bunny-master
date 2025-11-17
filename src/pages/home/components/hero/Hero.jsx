@@ -8,7 +8,7 @@ import { heroTitles } from "../../../../utils/titles/Titles";
 export const Hero = () => {
  
   return (
-    <Container className="flex-col lg:flex-row min-h-screen py-12 mt-8 lg:mt-0">
+    <Container className="flex-col lg:flex-row min-h-screen py-12 mt-8 lg:mt-0" id="home">
       {/* Texto principal */}
       <div className="flex-1 lg:items-start lg:text-left space-y-4 ">
         <div className="flex items-center space-x-2 text-xs sm:text-base md:text-lg lg:text-xl text-primary  ">

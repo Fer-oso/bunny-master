@@ -1,4 +1,4 @@
-import { useTypingEffect } from "../../../pages/home/components/hooks/useTypingEffect";
+import { useTypingEffect } from "../../../pages/home/hooks/useTypingEffect";
 
 export const Title = ({title}) => {
 

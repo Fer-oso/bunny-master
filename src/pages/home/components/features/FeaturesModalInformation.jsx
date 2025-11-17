@@ -20,7 +20,15 @@ export const FeaturesModalInformation = ({ feature, isOpen, onClose }) => {
     }
   }, [isOpen]);
 
-  if (!visible || !feature) return null;
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [onClose]);
+
+  if (!isOpen || !feature ) return null;
 
   const getDetailedContent = () => {
     if (feature.title === "Diseño Profesional") {
@@ -91,7 +99,7 @@ export const FeaturesModalInformation = ({ feature, isOpen, onClose }) => {
   onClick={handleBackgroundClick}
 >
       <div
-        className={`bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-200 ${
+        className={`bg-[#f1f5f9] rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-200 ${
           isClosing ? "scale-95 opacity-0" : "scale-100 opacity-100"
         }`}
         onClick={(e) => e.stopPropagation()}
@@ -161,7 +169,7 @@ export const FeaturesModalInformation = ({ feature, isOpen, onClose }) => {
           {/* CTA */}
           <div className="pt-6 border-t-2 border-gray-200">
             <button
-              className={`w-full ${feature.informativeColor} text-white font-bold py-4 rounded-xl hover:scale-[1.02] transition-transform shadow-lg`}
+              className={`w-full ${feature.informativeColor} text-black font-bold py-4 rounded-xl hover:scale-[1.02] transition-transform shadow-lg`}
             >
               Solicitar consulta gratuita
             </button>

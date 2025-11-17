@@ -1,96 +1,142 @@
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Facebook, 
-  Twitter, 
-  Instagram, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
   Linkedin,
   ArrowUp,
-  Heart
-} from 'lucide-react';
-import { Container } from '../../routes/layout/Container';
-import { Link } from 'react-router-dom';
+  Heart,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import { useScrollReveal } from "../../hooks/useScrollRevealOptions";
+import { Separator } from "../separator/Separator";
+
 
 const links = [
-  { label: 'Inicio', href: '/' },
-  { label: 'Servicios', href: 'servicios' },
-  { label: 'Sobre nosotros', href: 'nosotros' },
-]
+  { label: "Inicio", href: "/" },
+  { label: "Servicios", href: "/servicios" },
+  { label: "Sobre nosotros", href: "/nosotros" },
+];
+
+const services = [
+  "Desarrollo Web",
+  "Aplicaciones Móviles",
+  "Diseño UX/UI",
+  "Consultoría Digital",
+  "Soporte Técnico",
+];
+
+const socialLinks = [
+  {
+    icon: Facebook,
+    href: "https://www.facebook.com/profile.php?id=61556509191154",
+    label: "Facebook",
+  },
+  { icon: Twitter, href: "#", label: "Twitter" },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/bunnycreationsworld/",
+    label: "Instagram",
+  },
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+];
+
+const contactInfo = [
+  { icon: Mail, text: "equipobunny@gmail.com" },
+  { icon: Phone, text: "351 200-8632" },
+  { icon: MapPin, text: "Cordoba, AR" },
+];
 
 export const Footer = () => {
+  const { elementRef: footerRef, isVisible: isFooterVisible } =
+    useScrollReveal({
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+      triggerOnce: true,
+    });
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <footer className="px-4 lg:px-8 shadow-md top-0 flex flex-col items-center-safe overflow-hidden z-20 w-full  bg-gradient-to-br from-black via-black-800 to-slate-900 backdrop-blur-2xl">
-     
-      <div className='px-4 lg:px-8 py-12  text-center'>
-      {/* Elementos decorativos de fondo */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-800/5 rounded-full blur-3xl" />
-      </div>
-
-      <div className=" mx-auto sm:px-0 items-center ">
-        
-        {/* Sección principal del footer */}
-        <div className="w-full py-10 lg:py-20 xl:py-10">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-8 ">
-            
-            {/* Columna 1: Información de la empresa */}
+    <footer
+      ref={footerRef}
+      className={`
+        bg-foreground text-background
+        transition-all duration-800 ease-out
+        ${
+          isFooterVisible
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-8"
+        }
+      `}
+    >
+    
+      <div className="max-w-7xl mx-auto px-4 lg:px-0 m-auto
+        sm:max-w-screen-sm
+        md:max-w-screen-md
+        lg:max-w-screen-lg
+        xl:max-w-screen-xl
+        2xl:max-w-screen-2xl ">
+        <Separator/>
+        {/* Main footer content */}
+        <div className="py-16 lg:py-10 xl:flex  ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
+            {/* Column 1: Company info */}
             <div className="lg:col-span-2 space-y-6">
-            <div className="flex flex-col justify-center items-start text-left">
-                <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-                  <span className="color-primary-color bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] 
-                             bg-clip-text text-transparent">
-                   Bunny Creations World
-                  </span>
+              <div>
+                <h3 className="text-2xl lg:text-3xl font-bold mb-4 tracking-tight">
+                  Bunny Creations World
                 </h3>
-                <p className="text-slate-300 text-lg leading-relaxed max-w-md">
-                  Creamos soluciones digitales innovadoras que impulsan el crecimiento 
-                  de tu negocio con tecnología de vanguardia y diseño excepcional.
+                <p className="text-background/70 leading-relaxed max-w-md">
+                  Creamos soluciones digitales innovadoras que impulsan el
+                  crecimiento de tu negocio con tecnología de vanguardia y
+                  diseño excepcional.
                 </p>
               </div>
-              
-              {/* Información de contacto */}
+
+              {/* Contact info */}
               <div className="space-y-4">
-                <div className="flex items-center gap-3 text-slate-300 hover:text-teal-400 transition-colors duration-300">
-                  <div className="p-2 bg-slate-800/50 rounded-lg">
-                    <Mail className="w-5 h-5" />
+                {contactInfo.map(({ icon: Icon, text }, index) => (
+                  <div
+                    key={index}
+                    className="group flex items-center gap-3 text-background/70 
+                             hover:text-background transition-colors duration-300"
+                  >
+                    <div
+                      className="p-2 bg-background/5 rounded-lg 
+                                  group-hover:bg-background/10 
+                                  transition-colors duration-300"
+                    >
+                      <Icon className="w-5 h-5" />
+                    </div>
+                    <span>{text}</span>
                   </div>
-                  <span>equipobunny@gmail.com</span>
-                </div>
-                
-                <div className="flex items-center gap-3 text-slate-300 hover:text-teal-400 transition-colors duration-300">
-                  <div className="p-2 bg-slate-800/50 rounded-lg">
-                    <Phone className="w-5 h-5" />
-                  </div>
-                  <span>351 200-8632</span>
-                </div>
-                
-                <div className="flex items-center gap-3 text-slate-300 hover:text-teal-400 transition-colors duration-300">
-                  <div className="p-2 bg-slate-800/50 rounded-lg">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <span>Cordoba, AR</span>
-                </div>
+                ))}
               </div>
             </div>
 
-            {/* Columna 2: Enlaces rápidos */}
+            {/* Column 2: Quick links */}
             <div className="space-y-6">
-              <h4 className="text-xl font-semibold text-white">Enlaces Rápidos</h4>
+              <h4 className="text-xl font-semibold">Enlaces Rápidos</h4>
               <ul className="space-y-3">
                 {links.map(({ label, href }) => (
                   <li key={label}>
-                    <Link 
+                    <Link
                       to={href}
-                      className="text-slate-300 hover:text-teal-400 transition-colors duration-300 
-                               hover:translate-x-1 transform inline-block"
+                      className="text-background/70 hover:text-background 
+                               transition-all duration-300
+                               inline-flex items-center gap-2
+                               group"
                     >
+                      <span
+                        className="w-0 h-px bg-black
+                                   group-hover:w-4 
+                                   transition-all duration-300"
+                      />
                       {label}
                     </Link>
                   </li>
@@ -98,54 +144,51 @@ export const Footer = () => {
               </ul>
             </div>
 
-            {/* Columna 3: Servicios */}
+            {/* Column 3: Services */}
             <div className="space-y-6">
-              <h4 className="text-xl font-semibold text-white">Servicios</h4>
+              <h4 className="text-xl font-semibold">Servicios</h4>
               <ul className="space-y-3">
-                {[
-                  'Desarrollo Web', 
-                  'Aplicaciones Móviles', 
-                  'Diseño UX/UI', 
-                  'Consultoría Digital', 
-                  'Soporte Técnico'
-                ].map((service) => (
+                {services.map((service) => (
                   <li key={service}>
-                    <span 
-                      className="text-slate-300 hover:text-teal-400 transition-colors duration-300 
-                               hover:translate-x-1 transform inline-block cursor-default"
-                    >
-                      {service}
-                    </span>
+                    <span className="text-background/70 block">{service}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
 
-          {/* Newsletter */}
-          <div className="mt-16 pt-12 border-t border-slate-700/50">
+          {/* Newsletter section */}
+          
+          <div className="">
+          <Separator className={"py-20 lg:hidden"}/>
             <div className="max-w-2xl mx-auto text-center space-y-6">
-              <h4 className="text-2xl font-bold text-white">
+            
+              <h4 className="text-2xl font-bold">
                 Mantente al día con nuestras novedades
               </h4>
-              <p className="text-slate-300 text-lg">
-                Recibe las últimas actualizaciones sobre nuestros servicios y proyectos
+              <p className="text-background/70">
+                Recibe las últimas actualizaciones sobre nuestros servicios y
+                proyectos
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input
                   type="email"
                   placeholder="Tu email"
-                  className="flex-1 px-4 py-3 bg-slate-800/50 border border-slate-600/50 
-                           rounded-lg text-white placeholder-slate-400
-                           focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500/50
+                  className="flex-1 px-4 py-3 
+                           bg-background/5 border border-background/10
+                           rounded-lg text-background placeholder-background/40
+                           focus:outline-none focus:ring-2 focus:ring-background/20 
+                           focus:border-background/20
                            transition-all duration-300"
                 />
-                <button className="px-6 py-3 bg-gradient-to-r
-                                 text-white font-semibold rounded-lg
-                                 shadow-lg shadow-[#ff66c4]/50 hover:shadow-xl hover:shadow-teal-500/35
-                                 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]
-                                 focus:outline-none  ">
+                <button
+                  className="px-6 py-3 
+                           bg-background text-foreground font-semibold rounded-lg
+                           hover:bg-background/90
+                           transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]
+                           focus:outline-none focus:ring-2 focus:ring-background/50"
+                >
                   Suscribirse
                 </button>
               </div>
@@ -153,61 +196,50 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Sección inferior */}
-        <div className="border-t backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-2  py-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-              
-              {/* Copyright */}
-              <div className="flex items-center gap-2 text-slate-400">
-                <span>© 2025 Bunny Creations world. Hecho con</span>
-                <Heart className="w-4 h-4 text-red-500 animate-pulse" />
-                <span>en Argentina</span>
-              </div>
-
-              {/* Redes sociales */}
-              <div className="flex items-center gap-4">
-                {[
-                  { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61556509191154', label: 'Facebook' },
-                  { icon: Twitter, href: '#', label: 'Twitter' },
-                  { icon: Instagram, href: 'https://www.instagram.com/bunnycreationsworld/', label: 'Instagram' },
-                  { icon: Linkedin, href: '#', label: 'LinkedIn' }
-                ].map(({ icon: Icon, href, label }) => (
-                  <a
-                  target="_blank" 
-                    key={label}
-                    href={href}
-                    aria-label={label}
-                    className="p-3 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg
-                             text-slate-400 hover:text-teal-400
-                             transition-all duration-300 hover:scale-110 hover:-translate-y-1
-                             focus:outline-none focus:ring-2 focus:ring-teal-500/50"
-                    
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                ))}
-              </div>
-
-              {/* Botón volver arriba */}
-              <button
-                onClick={scrollToTop}
-                className="p-3 bg-gradient-to-r
-                         text-white rounded-lg shadow-lg shadow-[#ff66c4]/50
-                         hover:shadow-xl hover:shadow-teal-500/35
-                         transition-all duration-300 hover:scale-110 hover:-translate-y-1
-                         focus:outline-none "
-                aria-label="Volver arriba"
-              >
-                <ArrowUp className="w-5 h-5" />
-              </button>
+        {/* Bottom section */}
+        <Separator/>
+        <div className="py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            {/* Copyright */}
+            <div className="flex items-center gap-2 text-background/60 text-sm">
+              <span>© 2025 Bunny Creations World. Hecho con</span>
+              <Heart className="w-4 h-4 text-background fill-background animate-pulse" />
+              <span>en Argentina</span>
             </div>
+
+            {/* Social links */}
+            <div className="flex items-center gap-4">
+              {socialLinks.map(({ icon: Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="p-3 bg-background/5 hover:bg-background/10 rounded-lg
+                           text-background/70 hover:text-background
+                           transition-all duration-300 hover:scale-110 hover:-translate-y-1
+                           focus:outline-none focus:ring-2 focus:ring-background/20"
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
+
+            {/* Scroll to top button */}
+            <button
+              onClick={scrollToTop}
+              className="p-3 bg-background text-foreground rounded-lg
+                       hover:bg-background/90
+                       transition-all duration-300 hover:scale-110 hover:-translate-y-1
+                       focus:outline-none focus:ring-2 focus:ring-background/50"
+              aria-label="Volver arriba"
+            >
+              <ArrowUp className="w-5 h-5" />
+            </button>
           </div>
         </div>
-        
-      </div>
       </div>
     </footer>
   );
 };
-

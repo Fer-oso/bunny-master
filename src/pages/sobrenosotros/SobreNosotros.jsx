@@ -1,7 +1,7 @@
 import TeamCardSection from "./components/TeamCardSection";
-import { useTypingEffect } from "../home/components/hooks/useTypingEffect";
 import { P } from "../../components/paragraph/P";
 import { BackgroundDecoration } from "../../components/background/BackgroundDecoration";
+import { useTypingEffect } from "../home/hooks/useTypingEffect";
 
 // Textos con sus colores asociados
 const texts = [

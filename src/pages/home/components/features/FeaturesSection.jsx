@@ -16,7 +16,7 @@ export const FeaturesSection = () => {
       urlImage: "./img/servicios/1.jpg",
       buttonText: "Explorar más",
       reverse: false,
-      headerColor:"bg-gradient-to-r from-[#ffb8b8]/50 via-[#ffb8b8]/50 to-[#ffb8b8]/50",
+      headerColor:"bg-gradient-to-r from-[#ffb8b8]/70 via-[#ffb8b8]/70 to-[#ffb8b8]/70",
       informativeColor: "bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8]",
     },
     {
