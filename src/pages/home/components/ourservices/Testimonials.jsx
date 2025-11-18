@@ -35,7 +35,7 @@ export default function Testimonials() {
   return (
     <section
       ref={sectionRef}>
-      <div className="container  md:pt-20">
+      <div className="container my-10">
         {/* Section Header */}
         <div
           className={` mb-10 mx-auto text-center transition-all duration-800 ease-out ${

@@ -2,30 +2,27 @@ import { ArrowRight } from "lucide-react";
 import { P } from "../../../../components/paragraph/P";
 import { useScrollReveal } from "../../../../hooks/useScrollRevealOptions";
 
-export default function ServiceCard({service, index, onLeave, onClick}) {
-
+export default function ServiceCard({ service, index, onLeave, onClick }) {
   const IconComponent = service.icon;
 
-  const { elementRef, isVisible } = useScrollReveal({threshold: 0.1, rootMargin: '0px 0px -80px 0px', triggerOnce: true,});
+  const { elementRef, isVisible } = useScrollReveal({
+    threshold: 0.1,
+    rootMargin: "0px 0px -80px 0px",
+    triggerOnce: true,
+  });
 
   const animationDelay = `${index * 100}ms`;
 
   return (
     <article
-    ref={elementRef}
-    style={{
- 
-      
-      transitionDelay: isVisible ? animationDelay : '0ms',
-    }}
+      ref={elementRef}
+      style={{
+        transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
+      }}
       className={`group relative  rounded-xl lg:p-8 shadow-sm
                    hover:border-foreground/20 hover:shadow-lg 
                    transition-all duration-500 ease-out cursor-pointer
-       ${
-          isVisible
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-8"
-        }
+       ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
     `}
       onMouseLeave={onLeave}
       onClick={onClick}
@@ -38,7 +35,6 @@ export default function ServiceCard({service, index, onLeave, onClick}) {
         }
       }}
     >
- 
       {/* Content container */}
       <div className="relative p-8 flex flex-col h-full">
         {/* Icon section */}
