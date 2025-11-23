@@ -1,12 +1,8 @@
 import { Container } from "../../../../routes/layout/Container";
-import { BackgroundDecoration } from "../../../../components/background/BackgroundDecoration";
-
 import { HeroSlider } from "../../../servicios/components/HeroSlider";
 import { StatsSection } from "../../../servicios/components/StatsSection";
-import { CtaSection } from "../../../servicios/components/CtaSection";
 import { services } from "../../../../utils/data/services";
 import ServicesGrid from "./ServicesGrid";
-
 import Testimonials from "./Testimonials";
 import ContactForm from "./ContactForm";
 
@@ -41,15 +37,15 @@ const ServicesSection = () => {
   ];
 
   return (
-    <Container>
-      <div id="services">
+    <Container id={"services"}>
+      <div>
     
-
-        <HeroSlider />
-
-        <div className="min-h-screen md:mt-17 lg:py-0 py-5 ">
+      <div className="min-h-screen  py-15 ">
           <ServicesGrid services={services} />
         </div>
+        <HeroSlider />
+
+   
 
         <StatsSection />
         <Testimonials />

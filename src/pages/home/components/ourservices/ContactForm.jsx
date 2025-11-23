@@ -91,7 +91,7 @@ export default function ContactForm() {
   return (
     <div
       ref={elementRef}
-      className={`min-h-screen  flex items-center justify-center px-4 py-12  `}
+      className={`min-h-screen  flex items-center justify-center px-4 pb-10  `}
       
     >
       <div className="w-full max-w-2xl ">

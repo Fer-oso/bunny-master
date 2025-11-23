@@ -74,8 +74,8 @@ export const HeroSlider = () => {
       </button>
 
       {/* Slide Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pb-20">
-        <div className="" key={`badge-${currentSlide}`}>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pb-20" >
+        <div className="" key={`badge-${currentSlide}`} >
           <span
             className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${currentSlideData.badge.color} ${currentSlideData.badge.textColor} rounded-full text-sm font-semibold mb-6 border ${currentSlideData.badge.borderColor} animate-in slide-in-from-top-4 duration-700`}
           >
@@ -84,7 +84,7 @@ export const HeroSlider = () => {
           </span>
         </div>
 
-        <h1 className="text-5xl  font-bold mb-6" key={`title-${currentSlide}`}>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6" key={`title-${currentSlide}`}>
           <span className="bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] bg-clip-text text-transparent animate-in slide-in-from-left-8 duration-700">
             {currentSlideData.title.line1}
           </span>

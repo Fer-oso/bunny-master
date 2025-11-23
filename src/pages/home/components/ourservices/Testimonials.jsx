@@ -44,11 +44,11 @@ export default function Testimonials() {
               : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight mb-4  bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] bg-clip-text text-transparent animate-in slide-in-from-left-8 duration-700">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-4  bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] bg-clip-text text-transparent animate-in slide-in-from-left-8 duration-700">
             Lo que dicen 
        </h2>
        <span> </span>
-       <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight mb-4 bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/80 to-[#46d5e7]/80 bg-clip-text text-transparent animate-in slide-in-from-right-8 duration-700 delay-200">
+       <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-4 bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/80 to-[#46d5e7]/80 bg-clip-text text-transparent animate-in slide-in-from-right-8 duration-700 delay-200">
        nuestros clientes
           </h2>
           

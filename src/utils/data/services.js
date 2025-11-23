@@ -12,7 +12,7 @@ export const services = [
       'Arquitectura escalable',
       'Testing automatizado'
     ],
-    gradient: 'bg-gradient-to-br from-blue-100 to-cyan-200',
+    gradient: 'bg-gradient-to-br from-blue-500 to-cyan-500',
     accentColor: 'bg-blue-500',
     modalContent: {
       subtitle: 'Soluciones web robustas y modernas',
@@ -55,7 +55,7 @@ export const services = [
       'Responsive Design',
       'User Research'
     ],
-    gradient: 'bg-gradient-to-br from-purple-100 to-pink-200',
+    gradient: 'bg-gradient-to-br from-purple-500 to-pink-500',
     accentColor: 'bg-purple-500',
     modalContent: {
       subtitle: 'Diseños que conectan con tus usuarios',
@@ -98,7 +98,7 @@ export const services = [
       'Compresión de assets',
       'Lazy Loading'
     ],
-    gradient: 'bg-gradient-to-br from-yellow-100 to-orange-200',
+    gradient: 'bg-gradient-to-br from-yellow-500 to-orange-500',
     accentColor: 'bg-yellow-500',
     modalContent: {
       subtitle: 'Velocidad y rendimiento excepcionales',
@@ -141,7 +141,7 @@ export const services = [
       'Pagos seguros',
       'Panel de admin'
     ],
-    gradient: 'bg-gradient-to-br from-green-100 to-emerald-200',
+    gradient: 'bg-gradient-to-br from-green-500 to-emerald-700',
     accentColor: 'bg-green-500',
     modalContent: {
       subtitle: 'Tu tienda online lista para vender',
@@ -184,7 +184,7 @@ export const services = [
       'Offline-first',
       'App Store deploy'
     ],
-    gradient: 'bg-gradient-to-br from-indigo-100 to-blue-200',
+    gradient: 'bg-gradient-to-br from-indigo-500 to-blue-500',
     accentColor: 'bg-indigo-500',
     modalContent: {
       subtitle: 'Apps móviles para iOS y Android',
@@ -227,7 +227,7 @@ export const services = [
       'Tech stack',
       'Mejores prácticas'
     ],
-    gradient: 'bg-gradient-to-br from-red-100 to-pink-200',
+    gradient: 'bg-gradient-to-br from-red-500 to-pink-500',
     accentColor: 'bg-red-500',
     modalContent: {
       subtitle: 'Experiencia técnica a tu servicio',

@@ -23,15 +23,15 @@ export default function TestimonialCard({ testimonial, index }) {
         }}
       >
         {/* Quote Icon */}
-        <div className="mb-6">
-          <div className="inline-flex p-3 bg-foreground/5 rounded-lg">
+        <div className="">
+          <div className="inline-flex  bg-foreground/5 rounded-lg">
             <Quote className="w-5 h-5 text-foreground/60" strokeWidth={2} />
           </div>
         </div>
   
         {/* Testimonial Quote */}
-        <blockquote className="mb-8">
-          <P className="text-foreground/80 leading-relaxed text-[15px]">
+        <blockquote className="mb-5">
+          <P className="text-foreground/80 leading-relaxed md:text-sm">
             "{testimonial.quote}"
           </P>
         </blockquote>
