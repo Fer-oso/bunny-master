@@ -1,4 +1,3 @@
-
 import { P } from "../../../../components/paragraph/P";
 import { useScrollReveal } from "../../../../hooks/useScrollRevealOptions";
 import TestimonialCard from "./TestimonialCard";
@@ -28,13 +27,14 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const { elementRef: sectionRef, isVisible: sectionVisible } = useScrollReveal({
-    threshold: 0.1,
-  });
+  const { elementRef: sectionRef, isVisible: sectionVisible } = useScrollReveal(
+    {
+      threshold: 0.1,
+    }
+  );
 
   return (
-    <section
-      ref={sectionRef}>
+    <section ref={sectionRef}>
       <div className="container my-10">
         {/* Section Header */}
         <div
@@ -44,15 +44,15 @@ export default function Testimonials() {
               : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-4  bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] bg-clip-text text-transparent animate-in slide-in-from-left-8 duration-700">
-            Lo que dicen 
-       </h2>
-       <span> </span>
-       <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-4 bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/80 to-[#46d5e7]/80 bg-clip-text text-transparent animate-in slide-in-from-right-8 duration-700 delay-200">
-       nuestros clientes
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight ">
+            <span className=" text-[#ffb8b8]">Lo que dicen </span> <br/>
+            <span className=" text-[#46d5e7]/80"> nuestros clientes </span>
           </h2>
-          
-          <P className="text-muted-foreground leading-relaxed m-auto py-3 ">
+        
+
+         
+
+          <P className="m-auto py-3 ">
             La confianza de nuestros clientes es nuestro mayor logro. Conozca
             sus experiencias trabajando con nosotros.
           </P>
@@ -72,5 +72,3 @@ export default function Testimonials() {
     </section>
   );
 }
-
-

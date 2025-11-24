@@ -13,17 +13,17 @@ export default function ServicesGrid({services}) {
     <>
       <div className="container mx-auto px-4">
           {/* Section header */}
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-100">
               <span className="text-sm text-blue-600 font-semibold">SERVICIOS DE SISTEMAS</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#ffb8b8] via-[#ffb8b8] to-[#ffb8b8] bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#ffb8b8]">
               Soluciones backend e infraestructura
-              <span className="block mt-2 bg-gradient-to-r from-[#46d5e7]/80 via-[#46d5e7]/80 to-[#46d5e7]/80 bg-clip-text text-transparent">
+              <span className="block mt-2 text-[#46d5e7]/80">
                 de clase empresarial
               </span>
             </h2>
-            <P className="text-center m-auto">
+            <P className="m-auto">
               Arquitecturas robustas, APIs escalables e infraestructura automatizada para sistemas de alto rendimiento
             </P>
           </div>
